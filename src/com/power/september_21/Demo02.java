@@ -88,28 +88,36 @@ class MyTimer {
 }
 
 public class Demo02 {
+
+    static class A {
+
+    }
+
     public static void main(String[] args) throws InterruptedException {
-        MyTimer myTimer = new MyTimer();
-        myTimer.schedule(new Runnable() {
-            @Override
-            public void run() {
-                System.out.println("时间到1！");
-            }
-        },3000);
-
-        myTimer.schedule(new Runnable() {
-            @Override
-            public void run() {
-                System.out.println("时间到2！");
-            }
-        },4000);
-
-        myTimer.schedule(new Runnable() {
-            @Override
-            public void run() {
-                System.out.println("时间到3！");
-            }
-        },5000);
-        System.out.println("开始计时");
+//        MyTimer myTimer = new MyTimer();
+//        myTimer.schedule(new Runnable() {
+//            @Override
+//            public void run() {
+//                System.out.println("时间到1！");
+//            }
+//        },3000);
+//
+//        myTimer.schedule(new Runnable() {
+//            @Override
+//            public void run() {
+//                System.out.println("时间到2！");
+//            }
+//        },4000);
+//
+//        myTimer.schedule(new Runnable() {
+//            @Override
+//            public void run() {
+//                System.out.println("时间到3！");
+//            }
+//        },5000);
+//        System.out.println("开始计时");
+        String s = "123";
+        int a = Integer.parseInt(s);
+        System.out.println("a=" + a);
     }
 }
