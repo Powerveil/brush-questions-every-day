@@ -140,7 +140,43 @@ public class Demo11 {
 
     }
 
+//    public static int largestInteger(int num) {
+//        String s = num + "";
+//        System.out.println(s);
+//        Integer[] arr = new Integer[s.length()];
+//        for (int i = 0; i < arr.length; i++) {
+//            arr[i] = Integer.parseInt(s.charAt(i) + "");
+//        }
+//        Arrays.sort(arr);
+//        int sum = 0;
+//        int t = 1;
+//
+//        for (Integer integer : arr) {
+//            sum += (integer * t);
+//            t *= 10;
+//        }
+//        return sum;
+//    }
+
+    public static int largestInteger(int num) {
+        String s = num + "";
+        StringBuilder sb = new StringBuilder(s);
+        int len = s.length();
+        for (int i = 0; i < len - 1; i++) {
+            for (int j = i + 1; j < len; j++) {
+                if ((sb.charAt(i) - sb.charAt(j)) % 2 == 0 && sb.charAt(i) < sb.charAt(j)) {
+                    char c = sb.charAt(i);
+                    sb.setCharAt(i, sb.charAt(j));
+                    sb.setCharAt(j, c);
+                }
+            }
+        }
+        return (int) Integer.parseInt(sb.toString());
+    }
+
+
     public static void main(String[] args) {
 //        System.out.println(Arrays.toString(sortEvenOdd(new int[] {4,1,2,3})));
+        System.out.println(largestInteger(65875));
     }
 }
