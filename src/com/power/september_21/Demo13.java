@@ -82,11 +82,11 @@ public class Demo13 {
 //    }
 
 
-    public static void main(String[] args) {
-        Stack<Integer> stack = new Stack<>();
-        Integer peek = stack.peek();
-        System.out.println(peek);
-    }
+//    public static void main(String[] args) {
+//        Stack<Integer> stack = new Stack<>();
+//        Integer peek = stack.peek();
+//        System.out.println(peek);
+//    }
 
 
 
@@ -129,4 +129,25 @@ public class Demo13 {
 //
 //        return root;
 //    }
+
+    public static int fib(int n) {
+        if (n == 0) return 0;
+        if (n < 3) return 1;
+        long first = 1;
+        long second = 1;
+        long third = 0;
+        long ww = 1000000007;//1111111111111111
+        while (n > 2) {
+            third = first + second;
+            second = first;
+            first = third;
+            n--;
+        }
+        return (int)(third % ww);
+    }
+
+
+    public static void main(String[] args) {
+        System.out.println(fib(93));
+    }
 }
