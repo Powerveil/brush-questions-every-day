@@ -34,50 +34,99 @@ public class Demo13 {
 //        System.out.println(sum);
 //    }
 
-    public static void main(String[] agrs) {
-        Scanner in = new Scanner(System.in);
-        String a = in.nextLine();
-        String b = in.nextLine();
-        StringBuilder sb = new StringBuilder();
-        HashSet<Character> set = new HashSet<>();
-        for (int i = 0; i < b.length(); i++) {
-            set.add(b.charAt(i));
-            //Thy r stdnts.
-            //Thy r stdnts.
-        }
+//    public static void main(String[] agrs) {
+//        Scanner in = new Scanner(System.in);
+//        String a = in.nextLine();
+//        String b = in.nextLine();
+//        StringBuilder sb = new StringBuilder();
+//        HashSet<Character> set = new HashSet<>();
+//        for (int i = 0; i < b.length(); i++) {
+//            set.add(b.charAt(i));
+//            //Thy r stdnts.
+//            //Thy r stdnts.
+//        }
+//
+//        for (int i = 0; i < a.length(); i++) {
+//            if (!set.contains(a.charAt(i))) {
+//                sb.append(a.charAt(i));
+//            }
+//        }
+//        System.out.println(sb.toString());
+//    }
 
-        for (int i = 0; i < a.length(); i++) {
-            if (!set.contains(a.charAt(i))) {
-                sb.append(a.charAt(i));
-            }
-        }
-        System.out.println(sb.toString());
+
+//    public TreeNode buildTree(int[] preorder, int[] inorder) {
+//        if (preorder == null || preorder.length == 0) {
+//            return null;
+//        }
+//        TreeNode root = new TreeNode(preorder[0]);
+//        Deque<TreeNode> stack = new LinkedList<>();
+//        stack.push(root);
+//        int inorderIndex = 0;
+//        for (int i = 1; i < preorder.length; i++) {
+//            int preorderVal = preorder[i];
+//            TreeNode node = stack.peek();
+//            if (node.val != inorder[inorderIndex]) {
+//                node.left = new TreeNode(preorderVal);
+//                stack.push(node.left);
+//            } else {
+//                while (!stack.isEmpty() && stack.peek().val == inorder[inorderIndex]) {
+//                    node = stack.pop();
+//                    inorderIndex++;
+//                }
+//                node.right = new TreeNode(preorderVal);
+//                stack.push(node.right);
+//            }
+//        }
+//        return root;
+//    }
+
+
+    public static void main(String[] args) {
+        Stack<Integer> stack = new Stack<>();
+        Integer peek = stack.peek();
+        System.out.println(peek);
     }
 
 
+
+    int[] preorder;
+    HashMap<Integer, Integer> dic = new HashMap<>();
     public TreeNode buildTree(int[] preorder, int[] inorder) {
-        if (preorder == null || preorder.length == 0) {
-            return null;
-        }
-        TreeNode root = new TreeNode(preorder[0]);
-        Deque<TreeNode> stack = new LinkedList<TreeNode>();
-        stack.push(root);
-        int inorderIndex = 0;
-        for (int i = 1; i < preorder.length; i++) {
-            int preorderVal = preorder[i];
-            TreeNode node = stack.peek();
-            if (node.val != inorder[inorderIndex]) {
-                node.left = new TreeNode(preorderVal);
-                stack.push(node.left);
-            } else {
-                while (!stack.isEmpty() && stack.peek().val == inorder[inorderIndex]) {
-                    node = stack.pop();
-                    inorderIndex++;
-                }
-                node.right = new TreeNode(preorderVal);
-                stack.push(node.right);
-            }
-        }
-        return root;
+        this.preorder = preorder;
+        for(int i = 0; i < inorder.length; i++)
+            dic.put(inorder[i], i);
+        return recur(0, 0, inorder.length - 1);
     }
+    TreeNode recur(int root, int left, int right) {
+        if(left > right) return null;                          // 递归终止
+        TreeNode node = new TreeNode(preorder[root]);          // 建立根节点
+        int i = dic.get(preorder[root]);                       // 划分根节点、左子树、右子树
+        node.left = recur(root + 1, left, i - 1);              // 开启左子树递归
+        node.right = recur(root + i - left + 1, i + 1, right); // 开启右子树递归
+        return node;                                           // 回溯返回根节点
+    }
+
+//
+//    public TreeNode buildTree(int[] preorder, int[] inorder) {
+//        return ww(preorder, 0, preorder.length - 1, inorder, 0, inorder.length - 1);
+//    }
+//
+//    private TreeNode ww(int[] pre, int pre_start, int pre_end, int[] in, int in_start, int in_end) {
+//        if (pre_start > pre_end || in_start > in_end) {
+//            return null;
+//        }
+//
+//        TreeNode root = new TreeNode(pre[pre_start]);
+//
+//        for (int i = in_start; i <= in_end; i++) {
+//            if (pre[pre_start] == in[i]) {
+//                root.left = ww(pre, pre_start + 1, pre_start  + i - in_start, in, in_start, i - 1);
+//                root.right = ww(pre, pre_start + i - in_start + 1, pre_end, in, i + 1, in_end);
+//                break;
+//            }
+//        }
+//
+//        return root;
+//    }
 }
