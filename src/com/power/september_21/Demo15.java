@@ -1,15 +1,13 @@
 package com.power.september_21;
 
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.PriorityQueue;
-import java.util.Scanner;
+import java.util.*;
 
 /**
  * @author 崔帅
  * @version 1.0
  */
 public class Demo15 {
+    int a;
 //    public static void main(String[] agrs) {
 //        Scanner in = new Scanner(System.in);
 //
@@ -64,6 +62,25 @@ public class Demo15 {
     }
 
     public static void main(String[] args) {
-        System.out.println(MoreThanHalfNum_Solution(new int[] {1,2,1,2,1,2,1,1}));
+//        Integer[] arr = new Integer[] {1,2,1,2,1,2,1,1};
+//        System.out.println(MoreThanHalfNum_Solution(arr));
+//        Arrays.sort(arr,new Comparator<Integer>(){
+//
+//            @Override
+//            public int compare(Integer o1, Integer o2) {
+//                return 0;
+//            }
+//        });
+//
+//        Comparator<Integer> comparator = new Comparator<Integer>() {
+//            @Override
+//            public int compare(Integer o1, Integer o2) {
+//                return 0;
+//            }
+//        };
+
+        int i = Integer.parseInt("12");
+        System.out.println(i);
+
     }
 }
