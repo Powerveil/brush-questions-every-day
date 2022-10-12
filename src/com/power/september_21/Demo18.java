@@ -116,19 +116,99 @@ public class Demo18 {
 //    }
 
 
-    public int minimumOperations(int[] nums) {
-        /*
-        找出除0之外有多少个数
-         */
-        int[] cntMap = new int[101];
-        int res = 0;
-        for (int num : nums) {
-            if (num != 0 && ++cntMap[num] == 1) res++;
+//    public int minimumOperations(int[] nums) {
+//        /*
+//        找出除0之外有多少个数
+//         */
+//        int[] cntMap = new int[101];
+//        int res = 0;
+//        for (int num : nums) {
+//            if (num != 0 && ++cntMap[num] == 1) res++;
+//        }
+//        return res;
+//    }
+
+//    // 2-16进制表示的位数
+//    public String[] arr = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9",
+//            "A", "B", "C", "D", "E", "F"};
+//
+//    // 转换结果
+//    public String conversion = "";
+//
+//    public String convertToBase7(int number, int system) {
+//        convert(Math.abs(number), system);
+//        String s = number < 0 ? "-" : "";
+//        return s + conversion;
+//    }
+//
+//    /**
+//     * @param number 要转换的十进制数
+//     * @param system 转换的进制位
+//     */
+//    public void convert(int number, int system) {
+//        conversion = arr[number % system] + conversion;
+//
+//        if (number / system == 0) return;
+//
+//        convert(number / system, system);
+//    }
+
+
+//    public String convertToBase7(int num) {
+//        StringBuilder s = new StringBuilder();
+//        String qq = num < 0 ? "-":"";
+//        num = num < 0 ? -num : num;
+//        while (num > 0) {
+//            s.insert(0, (num % 7) + "");
+//            num /= 7;
+//        }
+//        if ("".equals(s.toString())) return "0";
+//
+//        return qq + s.toString();
+//    }
+
+
+    public String convertToBase7(int num) {
+        if (num == 0) {
+            return "0";
         }
-        return res;
+        boolean negative = num < 0;
+        num = Math.abs(num);
+        StringBuilder digits = new StringBuilder();
+        while (num > 0) {
+            digits.append(num % 7);
+            num /= 7;
+        }
+        if (negative) {
+            digits.append('-');
+        }
+        return digits.reverse().toString();
     }
 
+//    public String convertToBase7(int num) {
+//        if (num == 0) return "0";
+//
+//        StringBuilder s = new StringBuilder();
+//
+//        boolean flag = num < 0 ? true : false;
+//
+//        num = num < 0 ? -num : num;
+//        while (num > 0) {
+//            s.append((num % 7) + "");
+//            num /= 7;
+//        }
+//        if (flag) {
+//            s.append("-");
+//        }
+//
+//        return s.reverse().toString();
+//    }
+
     public static void main(String[] args) {
-        System.out.println(removeAnagrams(new String[] {"abba","baba","bbaa","cd","cd"}));
+//        System.out.println(removeAnagrams(new String[]{"abba", "baba", "bbaa", "cd", "cd"}));
+        Demo18 demo18 = new Demo18();
+//        demo18.convertToBase7(255, 16);
+//        System.out.println(demo18.conversion);
+        System.out.println(demo18.convertToBase7(0));
     }
 }
