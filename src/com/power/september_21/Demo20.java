@@ -124,25 +124,89 @@ public class Demo20 {
 //    }
 
 
-    public static void main(String[] args) throws Exception {
-        Scanner sc = new Scanner(System.in);
-        int W = sc.nextInt(), H = sc.nextInt();
-        if (W <= 2 && H <= 2) {
-            System.out.println(W * H);
-            return;
+//    public static void main(String[] args) throws Exception {
+//        Scanner sc = new Scanner(System.in);
+//        int W = sc.nextInt(), H = sc.nextInt();
+//        if (W <= 2 && H <= 2) {
+//            System.out.println(W * H);
+//            return;
+//        }
+//        if (W <= 2) {
+//            int temp = W;
+//            W = H;
+//            H = temp;
+//        }
+//        int r = 0, a = W / 2, b = W % 2;
+//        if (b == 1) a++;
+//        int len1 = a, len2 = a - 1;
+//        r += H / 4 * 2 * W;
+//        if (H % 4 == 1) r += len1;
+//        if (H % 4 == 2) r += 2 * len1;
+//        if (H % 4 == 3) r += len1 + W;
+//        System.out.println(r);
+//    }
+
+
+    public static int countTime(String time) {
+        char[] ww = new char[time.length()];
+
+        for (int i = 0; i < time.length(); i++) {
+            ww[i] = time.charAt(i);
         }
-        if (W <= 2) {
-            int temp = W;
-            W = H;
-            H = temp;
+
+//         if (qq(ww[0], '0', '9') && qq(ww[1], '0', '4') && qq(ww[3], '0', '5') && qq(ww[4], '0', '9')) {
+
+//         }
+
+        // 0-2 0-9 0-5 0-9
+        boolean[] flag = new boolean[time.length()];
+        for (int i = 0; i < time.length(); i++) {
+            flag[i] = ww[i] == '?';
         }
-        int r = 0, a = W / 2, b = W % 2;
-        if (b == 1) a++;
-        int len1 = a, len2 = a - 1;
-        r += H / 4 * 2 * W;
-        if (H % 4 == 1) r += len1;
-        if (H % 4 == 2) r += 2 * len1;
-        if (H % 4 == 3) r += len1 + W;
-        System.out.println(r);
+        int count = 1;
+        if (!flag[0] && ww[0] != '2') {//ww[0]有值 0 或 1
+            if (flag[1]) count *= 10;
+            if (flag[3]) count *= 6;
+            if (flag[4]) count *= 10;
+        } else if (ww[0] == '2') {//ww[0] 为2
+            if (flag[1]) count *= 4;
+            if (flag[1] || ww[1] <= '4') {
+                if (ww[1] < '4' || flag[1]) {
+                    if (flag[3]) count *= 6;
+                    if (flag[4]) count *= 10;
+                }
+                count = count == 1 ? 1 : (count + (ww[1] < '4' ? 0 : 1));
+            }
+        } else {//ww[0]是?
+            //先计算ww[0] 0 或 1
+            count *= 2;
+            if (flag[1]) count *= 10;
+            if (flag[3]) count *= 6;
+            if (flag[4]) count *= 10;
+
+            //然后计算ww[0] 2
+            int temp = 1;
+            if (flag[1]) temp *= 4;
+            if (flag[1] || ww[1] <= '4') {
+                if (ww[1] < '4' || flag[1]) {
+                    if (flag[3]) temp *= 6;
+                    if (flag[4]) temp *= 10;
+                }
+                temp = temp == 1 ? 1 : (temp + (ww[1] < '4' ? 0 : 1));
+            }
+
+            count += temp;
+
+        }
+        return count;
+    }
+
+
+    private static boolean qq(char test, char start, char end) {
+        return test == '?' || test >= start && test <= end;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(countTime("?5:00"));
     }
 }
