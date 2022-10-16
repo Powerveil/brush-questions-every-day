@@ -21,7 +21,7 @@ public class UdpEchoServer {
     public void start() throws IOException {
         System.out.println("服务器启动!");
         while (true) {
-            // 魂环里面处理一次请求，
+            // 循环里面处理一次请求，
             // 1. 读取请求并解析
             DatagramPacket requestPacket = new DatagramPacket(new byte[4096], 4096);
             socket.receive(requestPacket);

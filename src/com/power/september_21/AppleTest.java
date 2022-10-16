@@ -13,6 +13,7 @@ public class AppleTest {
         System.out.println(list);
         List<Apple> res = filterApples(list, (t) -> "红色".equals(t.getColor()));
         System.out.println(res);
+        
     }
 
     /**

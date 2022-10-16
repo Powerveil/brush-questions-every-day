@@ -72,7 +72,8 @@ public class No_10 {
                 }
                 else {
                     int tmp = f[i - 1][j] < f[i][j - 1] ? f[i - 1][j] + 1 : f[i][j - 1] + 1;
-                    f[i][j] = f[i - 1][j - 1] + 1 < tmp ? f[i - 1][j - 1] + 1 : tmp;
+                    //f[i][j] = f[i - 1][j - 1] + 1 < tmp ? f[i - 1][j - 1] + 1 : tmp;
+                    f[i][j] = Math.min(f[i - 1][j - 1] + 1, tmp);
                 }
             }
         }
