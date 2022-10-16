@@ -1,5 +1,6 @@
 package com.power.september_21;
 
+import java.util.Arrays;
 import java.util.Stack;
 
 /**
@@ -45,7 +46,6 @@ public class Demo21 {
 //    }
 
 
-
     public static boolean chkParenthesis(String A, int n) {
         if ((n & 1) == 1) return false;
         // write code here
@@ -71,5 +71,24 @@ public class Demo21 {
     public static void main(String[] args) {
 //        System.out.println(chkParenthesis("{}a{}{}", 7));
         System.out.println(chkParenthesis("(()())", 6));
+    }
+
+
+    public int breakfastNumber(int[] staple, int[] drinks, int x) {
+        Arrays.sort(staple);
+        Arrays.sort(drinks);
+        int mod = 1000000007;
+        int sl = 0, sd = drinks.length - 1, ans = 0;
+        while (sl < staple.length && sd >= 0) {
+            int sum = staple[sl] + drinks[sd];
+            if (sum <= x) {
+                ans += sd + 1;
+                ans %= mod;
+                sl++;
+            } else {
+                sd--;
+            }
+        }
+        return ans %= mod;
     }
 }
