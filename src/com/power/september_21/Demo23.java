@@ -1,5 +1,6 @@
 package com.power.september_21;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -58,8 +59,6 @@ public class Demo23 {
         char[] chars = {'1','2','3','4'};
 
         int len = ww(chars.length);
-
-
 
 
 
