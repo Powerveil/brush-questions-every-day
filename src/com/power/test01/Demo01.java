@@ -28,6 +28,8 @@ public class Demo01 {
         list.add("nihao");
         System.out.println(list);
 //        LinkedList
+        System.out.println();
+        
 
     }
 }
