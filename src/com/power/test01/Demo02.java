@@ -10,4 +10,16 @@ public class Demo02 {
     public static void main(String[] args) {
 //        ConcurrentHashMap
     }
+
+    public int findRepeatNumber(int[] nums) {
+        int[] arr = new int[nums.length];
+        for (int num : nums) {
+            arr[num]++;
+        }
+
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] > 1) return i;
+        }
+        return -1;
+    }
 }
