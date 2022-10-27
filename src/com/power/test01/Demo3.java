@@ -1,6 +1,7 @@
 package com.power.test01;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 import java.util.TreeSet;
 
@@ -8,6 +9,7 @@ import java.util.TreeSet;
  * @author 崔帅
  * @version 1.0
  */
+@SuppressWarnings("all")
 public class Demo3 {
 
     int a;
@@ -168,7 +170,7 @@ public class Demo3 {
 //        list.add("JavaWeb");
 //        list.add("JavaEE");
 //        list.add("JVM");
-//        list.add("测试课程");
+//        list.add("GC");
 //        System.out.println(list);
 //        // 获取list中有效元素个数
 //        System.out.println(list.size());
@@ -186,8 +188,8 @@ public class Demo3 {
 //        list.remove(list.size() - 1);
 //        System.out.println(list);
 //        // 检测list中是否包含指定元素，包含返回true，否则返回false
-//        if (list.contains("测试课程")) {
-//            list.add("测试课程");
+//        if (list.contains("GC")) {
+//            list.add("GC");
 //        }
 //        // 查找指定元素第一次出现的位置：indexOf从前往后找，lastIndexOf从后往前找
 //        list.add("JavaSE");
@@ -201,34 +203,46 @@ public class Demo3 {
 //    }
 
 
+//    public static void main(String[] args) {
+//        TreeSet<String> treeSet = new TreeSet<>();
+//        treeSet.add("aa");
+//    }
+//
+//    public int findMinimum(int n, int[] left, int[] right) {
+//        // write code here
+//        int sum=0;
+//        int leftSum=0;
+//        int rightSum=0;
+//        int leftMin=Integer.MAX_VALUE;
+//        int rightMin=Integer.MAX_VALUE;
+//        for(int i=0;i<n;i++){
+//            if(left[i]*right[i]==0){//某种颜色的一只手的手套个数为0的时候，另一只手的手套数量(无法配对)
+//                sum=sum+left[i]+right[i];
+//            }else{
+//                leftSum+=left[i];//左手总数
+//                if(leftMin>left[i]){
+//                    leftMin=left[i];
+//                }
+//                rightSum+=right[i];//右手总数
+//                if(rightMin>right[i]){
+//                    rightMin=right[i];
+//                }
+//            }
+//        }
+//        return sum+Math.min(leftSum-leftMin+1,rightSum-rightMin+1)+1;
+//
+//    }
+
+
     public static void main(String[] args) {
-        TreeSet<String> treeSet = new TreeSet<>();
-        treeSet.add("aa");
-    }
+//        HashSet
 
-    public int findMinimum(int n, int[] left, int[] right) {
-        // write code here
-        int sum=0;
-        int leftSum=0;
-        int rightSum=0;
-        int leftMin=Integer.MAX_VALUE;
-        int rightMin=Integer.MAX_VALUE;
-        for(int i=0;i<n;i++){
-            if(left[i]*right[i]==0){//某种颜色的一只手的手套个数为0的时候，另一只手的手套数量(无法配对)
-                sum=sum+left[i]+right[i];
-            }else{
-                leftSum+=left[i];//左手总数
-                if(leftMin>left[i]){
-                    leftMin=left[i];
-                }
-                rightSum+=right[i];//右手总数
-                if(rightMin>right[i]){
-                    rightMin=right[i];
-                }
-            }
-        }
-        return sum+Math.min(leftSum-leftMin+1,rightSum-rightMin+1)+1;
+        ArrayList<Integer> arrayList = new ArrayList<>();
 
+        arrayList.add(1);
+        arrayList.add(2);
+        arrayList.add(3);
+        arrayList.add(4);
     }
 
 }
