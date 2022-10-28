@@ -16,6 +16,7 @@ public class Test {
 		//调用方法
         wuhuarou.eat();
         wuhuarou.run();
+//        String
 
 		/********** End **********/
 		

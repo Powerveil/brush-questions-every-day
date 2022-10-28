@@ -1,16 +1,13 @@
 package com.power.test01;
 
 import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.TreeSet;
 
 /**
  * @author 崔帅
  * @version 1.0
  */
 @SuppressWarnings("all")
-public class Demo3 {
+public class Demo03 {
 
     int a;
     int sum;
