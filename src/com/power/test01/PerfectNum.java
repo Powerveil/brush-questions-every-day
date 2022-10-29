@@ -1,5 +1,6 @@
 package com.power.test01;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class PerfectNum {
@@ -25,5 +26,27 @@ public class PerfectNum {
 
 
         System.out.println("张三".length());
+        String s = "aa";
+        s = "aaaaaa";
+//        StringBuilder
+
+
+        Random random = new Random(10);
+        Random random2 = new Random(10);
+        System.out.print(random.nextInt(5));
+        System.out.print(random.nextInt(5));
+        System.out.print(random.nextInt(5));
+        System.out.print(random.nextInt(5));
+        System.out.println(random.nextInt(5));
+        System.out.println("===============================");
+        System.out.print(random2.nextInt(5));
+        System.out.print(random2.nextInt(5));
+        System.out.print(random2.nextInt(5));
+        System.out.print(random2.nextInt(5));
+        System.out.println(random2.nextInt(5));
+//        Runtime
+        String s1 = (Double.valueOf("31.145")).toString();
+        System.out.println(s1);
+
     }
 }
