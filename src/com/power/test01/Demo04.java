@@ -138,4 +138,20 @@ public class Demo04 {
         }
         return count;
     }
+
+
+//    public static void main(String[] agrs) {
+//        Scanner in = new Scanner(System.in);
+//        int n = in.nextInt();
+//        int[] arr = new int[n * 3];
+//        for (int i = 0; i < n * 3; i++) {
+//            arr[i] = in.nextInt();
+//        }
+//        Arrays.sort(arr);
+//        long sum = 0;
+//        for (int i = n; i < n * 3; i += 2) {
+//            sum += arr[i];
+//        }
+//        System.out.println(sum);
+//    }
 }
