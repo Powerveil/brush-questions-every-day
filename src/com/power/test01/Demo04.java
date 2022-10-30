@@ -1,5 +1,6 @@
 package com.power.test01;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -100,5 +101,22 @@ public class Demo04 {
 
 
         return new int[] {maxCount, maxA};
+    }
+
+
+    public int purchasePlans(int[] nums, int target) {
+        int count = 0;
+        Arrays.sort(nums);
+        int left = 0;
+        int right = nums.length - 1;
+        while (left < right) {
+            if (nums[left] + nums[right] > target) right--;
+            else {
+                count += (right - left);
+                count %= 1000000007;
+                left++;
+            }
+        }
+        return count;
     }
 }
