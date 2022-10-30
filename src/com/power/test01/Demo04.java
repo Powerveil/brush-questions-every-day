@@ -119,4 +119,23 @@ public class Demo04 {
         }
         return count;
     }
+
+
+    public int breakfastNumber(int[] staple, int[] drinks, int x) {
+        Arrays.sort(staple);
+        Arrays.sort(drinks);
+        int mod = 1000000007;
+        int left = 0;
+        int right = drinks.length - 1;
+        int count = 0;
+        while (left < staple.length && right >= 0) {
+            if (staple[left] + drinks[right] > x) right--;
+            else {
+                count += (right + 1);
+                count %= mod;
+                left++;
+            }
+        }
+        return count;
+    }
 }
