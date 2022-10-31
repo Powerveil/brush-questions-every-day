@@ -8,29 +8,29 @@ import java.util.Scanner;
  * @version 1.0
  */
 public class Demo04 {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        String s = scanner.nextLine();
-        String[] split = s.split("-");
-        s = split[0];
-        String q = split[1];
-
-
-        s = s.replaceAll("A", "1");
-        s = s.replaceAll("J", "11");
-        s = s.replaceAll("Q", "12");
-        s = s.replaceAll("K", "13");
-        s = s.replaceAll("joker", "14");
-        s = s.replaceAll("JOKER", "15");
-
-        q = q.replaceAll("A", "1");
-        q = q.replaceAll("J", "11");
-        q = q.replaceAll("Q", "12");
-        q = q.replaceAll("K", "13");
-        q = q.replaceAll("joker", "14");
-        q = q.replaceAll("JOKER", "15");
-
-    }
+//    public static void main(String[] args) {
+//        Scanner scanner = new Scanner(System.in);
+//        String s = scanner.nextLine();
+//        String[] split = s.split("-");
+//        s = split[0];
+//        String q = split[1];
+//
+//
+//        s = s.replaceAll("A", "1");
+//        s = s.replaceAll("J", "11");
+//        s = s.replaceAll("Q", "12");
+//        s = s.replaceAll("K", "13");
+//        s = s.replaceAll("joker", "14");
+//        s = s.replaceAll("JOKER", "15");
+//
+//        q = q.replaceAll("A", "1");
+//        q = q.replaceAll("J", "11");
+//        q = q.replaceAll("Q", "12");
+//        q = q.replaceAll("K", "13");
+//        q = q.replaceAll("joker", "14");
+//        q = q.replaceAll("JOKER", "15");
+//
+//    }
 
 
 
@@ -154,4 +154,15 @@ public class Demo04 {
 //        }
 //        System.out.println(sum);
 //    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        String s = sc.nextLine();
+        String[] arr = s.split("，");
+        String name = arr[0];
+        String sex = arr[1];
+//        System.out.print("姓名：" + name + "，性别：" + sex + "，被创建了");
+        System.out.println("一个人被创建了\n" +
+                "姓名：" + name + ",性别：" + sex + ",被创建了");
+    }
+
 }
