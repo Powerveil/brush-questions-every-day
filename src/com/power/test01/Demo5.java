@@ -1,5 +1,7 @@
 package com.power.test01;
 
+import java.util.Arrays;
+
 /**
  * @author 崔帅
  * @version 1.0
@@ -25,6 +27,7 @@ public class Demo5 {
 //            e.printStackTrace();
             System.out.println("数组访问越界");
         }
+        System.out.println(Arrays.toString(a));
 
     }
 }
