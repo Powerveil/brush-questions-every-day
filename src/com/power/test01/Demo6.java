@@ -88,18 +88,18 @@ public class Demo6 {
 //        return count;
 //    }
 
-    public static int halfQuestions(int[] questions) {
-        int[] arr = new int[1001];
-        for (int a : questions) arr[a]++;
-        Arrays.sort(arr);
-        for (int i = arr.length - 1; i >= 0; i--) {
-
-        }
-    }
+//    public static int halfQuestions(int[] questions) {
+//        int[] arr = new int[1001];
+//        for (int a : questions) arr[a]++;
+//        Arrays.sort(arr);
+//        for (int i = arr.length - 1; i >= 0; i--) {
+//
+//        }
+//    }
 
     public static void main(String[] args) {
 //        System.out.println(halfQuestions(new int[] {2,1,6,2}));
-        System.out.println(halfQuestions(new int[] {13,8,3,7,5,6,11,12,3,6,6,11}));
+//        System.out.println(halfQuestions(new int[] {13,8,3,7,5,6,11,12,3,6,6,11}));
 //        System.out.println(halfQuestions(new int[] {1,5,1,3,4,5,2,5,3,3,8,6}));
 //        System.out.println(halfQuestions(new int[] {1,5,1,3,4,5,2,5,3,3,8,6}));
 //        System.out.println(halfQuestions(new int[] {1,1}));
@@ -116,6 +116,10 @@ public class Demo6 {
 //        queue.add(4);
 //
 //        System.out.println(queue);
+        String s = "123456";
+        System.out.println(s.indexOf("1"));
+        System.out.println(s.substring(0, s.indexOf("2")));
+
     }
 
 }
