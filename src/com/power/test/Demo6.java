@@ -19,6 +19,7 @@ public class Demo6 {
 
         // 2. 遍历目录, 需要借助一个核心方法, listFiles()
         scanDir(rootDir, toDelete);
+        System.out.println();
     }
 
     // 借助这个方法进行递归遍历
