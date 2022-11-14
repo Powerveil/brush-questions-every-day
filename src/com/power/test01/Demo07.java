@@ -1,5 +1,8 @@
 package com.power.test01;
 
+import java.io.File;
+import java.io.InputStream;
+import java.io.OutputStream;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -9,28 +12,37 @@ import java.util.Scanner;
  */
 public class Demo07 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int n = scanner.nextInt();
-        while (n--> 0) {
-//            System.out.println("aaa");
-            int len = scanner.nextInt();
-            int k = scanner.nextInt();
-            int[] arr = new int[len * 2];
-            for (int i = 0; i < len; i++) {
-                arr[i] = scanner.nextInt();
-            }
-            for (int i = len; i < arr.length; i++) {
-                arr[i] = scanner.nextInt();
-            }
+//        Scanner scanner = new Scanner(System.in);
+//        int n = scanner.nextInt();
+//        while (n--> 0) {
+////            System.out.println("aaa");
+//            int len = scanner.nextInt();
+//            int k = scanner.nextInt();
+//            int[] arr = new int[len * 2];
+//            for (int i = 0; i < len; i++) {
+//                arr[i] = scanner.nextInt();
+//            }
+//            for (int i = len; i < arr.length; i++) {
+//                arr[i] = scanner.nextInt();
+//            }
+////            System.out.println(Arrays.toString(arr));
+//
+//
+//            while (k--> 0) {
+//                ww(arr);
+//            }
 //            System.out.println(Arrays.toString(arr));
 
-
-            while (k--> 0) {
-                ww(arr);
-            }
-            System.out.println(Arrays.toString(arr));
-
+//            new File("dsa").de
+        String s = "x,yy,123";
+        Scanner scanner = new Scanner(s);
+        while (scanner.hasNext()) {
+            System.out.println(scanner.next() + " ");
         }
+
+//        InputStream
+        OutputStream
+
     }
 
     private static void ww(int[] arr) {
