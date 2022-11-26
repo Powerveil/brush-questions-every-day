@@ -41,7 +41,7 @@ public class Demo07 {
         }
 
 //        InputStream
-        OutputStream
+//        OutputStream
 
     }
 

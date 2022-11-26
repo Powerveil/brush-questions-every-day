@@ -1,4 +1,4 @@
 git add .
-git commit -m "�ύ"
-git push github main master
-git push gitee main master
+git commit -m "学习"
+git push github master master
+git push gitee master master
