@@ -50,7 +50,8 @@ public class Main {
         // 使用反向迭代器---反向遍历
         ListIterator<Integer> rit = list.listIterator(list.size());
         while (rit.hasPrevious()){
-            System.out.print(rit.previous() +" ");
+            System.out.print(rit.previous() +" ");//1000 0000 0000 2048 + 64
+            //                                                          2112
         }
         System.out.println();
     }
