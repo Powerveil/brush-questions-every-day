@@ -93,13 +93,13 @@ class MyQueue {
 
     // 弹出队列尾元素
     public int pop() {
-        if (empty()) throw  new OutOfTheRangeException("队列为空");//自定义异常
+        if (empty()) throw  new OutOfTheRangeException("队列为空"); // 自定义异常
         return elements[front++];
     }
 
     // 查看队列尾元素
     public int peek() {
-        if (empty()) throw new OutOfTheRangeException("队列为空");//自定义异常
+        if (empty()) throw new OutOfTheRangeException("队列为空"); // 自定义异常
         return elements[front];
     }
 
