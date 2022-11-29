@@ -81,7 +81,7 @@ class MyQueue {
     // 扩容
     private void grow() {
         int oldCapacity = elements.length;
-        int newCapacity = (oldCapacity + oldCapacity << 1);
+        int newCapacity = (oldCapacity + oldCapacity >> 1);
         elements = Arrays.copyOf(elements, newCapacity);
     }
 
