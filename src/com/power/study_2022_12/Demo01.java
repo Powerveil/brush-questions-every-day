@@ -88,7 +88,9 @@ public class Demo01 {
     public static void main(String[] args) {
 //        System.out.println(isValid("()"));
 //        System.out.println(Integer.parseInt("a"));
-        System.out.println(evalRPN(new String[]{"10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+"}));
+//        System.out.println(evalRPN(new String[]{"10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+"}));
+        System.out.println(IsPopOrder(new int[]{1,2,3,4,5}, new int[] {4,5,3,2,1}));
+        System.out.println(IsPopOrder(new int[]{1,2,3,4,5}, new int[] {4,3,5,1,2}));
     }
 
     //    逆骨版C++
@@ -134,5 +136,27 @@ public class Demo01 {
         else if ("*".equals(operation)) return p1 * p2;
         else if ("/".equals(operation)) return p1 / p2;
         else return -1;
+    }
+
+
+    public static boolean IsPopOrder(int [] pushA,int [] popA) {
+        Stack<Integer> stack = new Stack<>();
+        int i = 0;
+        int j = 0;
+        while (true) {
+            if (stack.isEmpty()) {
+                if (j == popA.length) return true;
+                stack.push(pushA[i++]);
+            } else {
+                int temp = stack.peek();
+                if (temp == popA[j]) {
+                    j++;
+                    stack.pop();
+                } else {
+                    if (i >= popA.length) return false;
+                    stack.push(pushA[i++]);
+                }
+            }
+        }
     }
 }
