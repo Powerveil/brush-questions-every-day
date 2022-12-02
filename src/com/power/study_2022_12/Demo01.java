@@ -1,5 +1,8 @@
 package com.power.study_2022_12;
 
+import javax.swing.tree.TreeNode;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Stack;
 
 /**
@@ -85,13 +88,13 @@ public class Demo01 {
         return stack.isEmpty();
     }
 
-    public static void main(String[] args) {
-//        System.out.println(isValid("()"));
-//        System.out.println(Integer.parseInt("a"));
-//        System.out.println(evalRPN(new String[]{"10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+"}));
-        System.out.println(IsPopOrder(new int[]{1,2,3,4,5}, new int[] {4,5,3,2,1}));
-        System.out.println(IsPopOrder(new int[]{1,2,3,4,5}, new int[] {4,3,5,1,2}));
-    }
+//    public static void main(String[] args) {
+////        System.out.println(isValid("()"));
+////        System.out.println(Integer.parseInt("a"));
+////        System.out.println(evalRPN(new String[]{"10", "6", "9", "3", "+", "-11", "*", "/", "*", "17", "+", "5", "+"}));
+//        System.out.println(IsPopOrder(new int[]{1,2,3,4,5}, new int[] {4,5,3,2,1}));
+//        System.out.println(IsPopOrder(new int[]{1,2,3,4,5}, new int[] {4,3,5,1,2}));
+//    }
 
     //    逆骨版C++
     //    bool isValid(string s) {
@@ -139,24 +142,91 @@ public class Demo01 {
     }
 
 
+//    public static boolean IsPopOrder(int [] pushA,int [] popA) {
+//        Stack<Integer> stack = new Stack<>();
+//        int i = 0;
+//        int j = 0;
+//        while (true) {
+//            if (stack.isEmpty()) {
+//                if (j == popA.length) return true;
+//                stack.push(pushA[i++]);
+//            } else {
+//                int temp = stack.peek();
+//                if (temp == popA[j]) {
+//                    j++;
+//                    stack.pop();
+//                } else {
+//                    if (i >= popA.length) return false;
+//                    stack.push(pushA[i++]);
+//                }
+//            }
+//        }
+//    }
+
     public static boolean IsPopOrder(int [] pushA,int [] popA) {
         Stack<Integer> stack = new Stack<>();
-        int i = 0;
         int j = 0;
-        while (true) {
-            if (stack.isEmpty()) {
-                if (j == popA.length) return true;
-                stack.push(pushA[i++]);
-            } else {
-                int temp = stack.peek();
-                if (temp == popA[j]) {
-                    j++;
-                    stack.pop();
-                } else {
-                    if (i >= popA.length) return false;
-                    stack.push(pushA[i++]);
-                }
+        for (int i = 0; i < pushA.length; i++) {
+            stack.push(pushA[i]);
+
+            while (j < popA.length && !stack.isEmpty() && stack.peek().equals(popA[j])) {
+                stack.pop();
+                j++;
             }
         }
+        return stack.isEmpty();
     }
+
+    public static void main(String[] args) {
+        Stack<Integer> s = new Stack();
+        s.push(1);
+        s.push(2);
+        s.push(3);
+        s.push(4);
+        System.out.println(s.size()); // 获取栈中有效元素个数---> 4
+        System.out.println(s.peek()); // 获取栈顶元素---> 4
+        s.pop(); // 4出栈，栈中剩余1 2 3，栈顶元素为3
+        System.out.println(s.pop()); // 3出栈，栈中剩余1 2 栈顶元素为3
+        if(s.empty()){
+            System.out.println("栈空");
+        }else{
+            System.out.println(s.size());
+        }
+    }
+
+    // 前序遍历
+    // https://leetcode.cn/problems/binary-tree-preorder-traversal/submissions/
+//    public List<Integer> preorderTraversal(TreeNode root) {
+//        List<Integer> list = new ArrayList<>();
+//        if (root != null) {
+//            list.add(root.val);
+//            list.addAll(preorderTraversal(root.left));
+//            list.addAll(preorderTraversal(root.right));
+//        }
+//        return list;
+//    }
+
+    // 中序遍历
+    // https://leetcode.cn/problems/binary-tree-inorder-traversal/submissions/
+//    public List<Integer> inorderTraversal(TreeNode root) {
+//        List<Integer> list = new ArrayList<>();
+//        if (root != null) {
+//            list.addAll(inorderTraversal(root.left));
+//            list.add(root.val);
+//            list.addAll(inorderTraversal(root.right));
+//        }
+//        return list;
+//    }
+
+    // 后序遍历
+    // https://leetcode.cn/problems/binary-tree-postorder-traversal/submissions/
+//    public List<Integer> postorderTraversal(TreeNode root) {
+//        List<Integer> list = new ArrayList<>();
+//        if (root != null) {
+//            list.addAll(postorderTraversal(root.left));
+//            list.addAll(postorderTraversal(root.right));
+//            list.add(root.val);
+//        }
+//        return list;
+//    }
 }
