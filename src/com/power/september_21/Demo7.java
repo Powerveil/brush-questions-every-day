@@ -8,7 +8,7 @@ import java.util.*;
  */
 public class Demo7 {
     public static void main(String[] args) {
-//        System.out.println(Arrays.toString(findEvenNumbers(new int[] {2,2,8,8,2})));
+//        System.out.println(java.util.Arrays.toString(findEvenNumbers(new int[] {2,2,8,8,2})));
     }
 
     //1.失败 没有考虑结果中有重复元素(来源于不同下标的元素的可能相同)
@@ -57,7 +57,7 @@ public class Demo7 {
 //            results[w++] = i;
 //        }
 //
-//        Arrays.sort(results);
+//        java.util.Arrays.sort(results);
 //
 //        return results;
 //    }

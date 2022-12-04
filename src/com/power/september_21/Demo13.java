@@ -24,7 +24,7 @@ public class Demo13 {
 //        for (int i = 0; i < arr.length; i++) {
 //            arr[i] = in.nextInt();
 //        }
-//        Arrays.sort(arr);//1 2 5 5 5 8
+//        java.util.Arrays.sort(arr);//1 2 5 5 5 8
 //        long sum = 0;
 //        int index = arr.length - 2;
 //        for (int i = 0; i < len; i++) {

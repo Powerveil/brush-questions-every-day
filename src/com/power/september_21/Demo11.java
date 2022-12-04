@@ -32,13 +32,13 @@ public class Demo11 {
 //                arr2[k++][1] = i;
 //            }
 //        }
-//        Arrays.sort(arr1, new Comparator<Integer[]>() {
+//        java.util.Arrays.sort(arr1, new Comparator<Integer[]>() {
 //            @Override
 //            public int compare(Integer[] o1, Integer[] o2) {
 //                return o2[0] - o1[0];
 //            }
 //        });
-//        Arrays.sort(arr2, new Comparator<Integer[]>() {
+//        java.util.Arrays.sort(arr2, new Comparator<Integer[]>() {
 //            @Override
 //            public int compare(Integer[] o1, Integer[] o2) {
 //                return o1[0] - o2[0];
@@ -69,13 +69,13 @@ public class Demo11 {
 //            }
 //        }
 //
-//        Arrays.sort(arr1, new Comparator<Integer>() {
+//        java.util.Arrays.sort(arr1, new Comparator<Integer>() {
 //            @Override
 //            public int compare(Integer o1, Integer o2) {
 //                return o2 - o1;//奇数逆序
 //            }
 //        });
-//        Arrays.sort(arr2, new Comparator<Integer>() {
+//        java.util.Arrays.sort(arr2, new Comparator<Integer>() {
 //            @Override
 //            public int compare(Integer o1, Integer o2) {
 //                return o1 - o2;//偶数正序
@@ -147,7 +147,7 @@ public class Demo11 {
 //        for (int i = 0; i < arr.length; i++) {
 //            arr[i] = Integer.parseInt(s.charAt(i) + "");
 //        }
-//        Arrays.sort(arr);
+//        java.util.Arrays.sort(arr);
 //        int sum = 0;
 //        int t = 1;
 //
@@ -176,7 +176,7 @@ public class Demo11 {
 
 
     public static void main(String[] args) {
-//        System.out.println(Arrays.toString(sortEvenOdd(new int[] {4,1,2,3})));
+//        System.out.println(java.util.Arrays.toString(sortEvenOdd(new int[] {4,1,2,3})));
         System.out.println(largestInteger(65875));
     }
 }

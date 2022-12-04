@@ -1,9 +1,5 @@
 package com.power.test01;
 
-import java.io.File;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.util.Arrays;
 import java.util.Scanner;
 
 /**
@@ -25,13 +21,13 @@ public class Demo07 {
 //            for (int i = len; i < arr.length; i++) {
 //                arr[i] = scanner.nextInt();
 //            }
-////            System.out.println(Arrays.toString(arr));
+////            System.out.println(java.util.Arrays.toString(arr));
 //
 //
 //            while (k--> 0) {
 //                ww(arr);
 //            }
-//            System.out.println(Arrays.toString(arr));
+//            System.out.println(java.util.Arrays.toString(arr));
 
 //            new File("dsa").de
         String s = "x,yy,123";

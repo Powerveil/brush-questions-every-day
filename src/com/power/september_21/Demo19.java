@@ -1,6 +1,7 @@
 package com.power.september_21;
 
 import java.util.*;
+import java.util.Arrays;
 
 /**
  * @author 崔帅
@@ -93,7 +94,7 @@ public class Demo19 {
 //            ww[i++][1] = entry.getValue();
 //        }
 //
-//        Arrays.sort(ww, new Comparator<int[]>() {
+//        java.util.Arrays.sort(ww, new Comparator<int[]>() {
 //            @Override
 //            public int compare(int[] o1, int[] o2) {
 //                return o1[0] - o2[0];
@@ -120,7 +121,7 @@ public class Demo19 {
             cntMap[p[0]] += p[1];
         }
         for (int i = 0; i <= 1000; i++) {
-            if (cntMap[i] != 0) res.add(Arrays.asList(i, cntMap[i]));
+            if (cntMap[i] != 0) res.add(java.util.Arrays.asList(i, cntMap[i]));
         }
         return res;
     }
@@ -129,7 +130,7 @@ public class Demo19 {
 
 //    public int[] answerQueries(int[] nums, int[] queries) {
 //        int[] answer = new int[queries.length];
-//        Arrays.sort(nums);
+//        java.util.Arrays.sort(nums);
 //        int sumS = 0;
 //        for (int i = 0; i < nums.length; i++) sumS += nums[i];
 //
@@ -151,7 +152,7 @@ public class Demo19 {
 
     public static int[] answerQueries(int[] nums, int[] queries) {
         int[] answer = new int[queries.length];
-        Arrays.sort(nums);
+        java.util.Arrays.sort(nums);
         int[] arr = new int[nums.length];
         for (int i = 0; i < arr.length; i++) arr[i] = nums[i];
         for (int i = 1; i < arr.length; i++) arr[i] += arr[i - 1];
@@ -180,7 +181,7 @@ public class Demo19 {
     }
 
     public static void main(String[] args) {
-//        System.out.println(Arrays.toString(answerQueries(new int[] {4,5,2,1}, new int[] {3,10,21})));
+//        System.out.println(java.util.Arrays.toString(answerQueries(new int[] {4,5,2,1}, new int[] {3,10,21})));
         System.out.println(Arrays.toString(answerQueries(new int[] {1000000}, new int[] {1000000})));
     }
 }

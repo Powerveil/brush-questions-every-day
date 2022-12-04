@@ -1,6 +1,7 @@
 package com.power.september_21;
 
 import java.util.*;
+import java.util.Arrays;
 
 /**
  * @author 崔帅
@@ -10,9 +11,9 @@ public class Demo18 {
 //    public static void main(String[] args) {
 //        String s = "1234";
 //        char[] chars = s.toCharArray();
-//        Arrays.sort(chars);
+//        java.util.Arrays.sort(chars);
 //        String s1 = new String(chars);
-//        System.out.println(Arrays.toString(chars));
+//        System.out.println(java.util.Arrays.toString(chars));
 //        System.out.println(s1);
 //        System.out.println(chars.toString());
 //    }
@@ -22,7 +23,7 @@ public class Demo18 {
 //        List<String> list = new ArrayList<>();
 //        for (int i = 0; i < words.length; i++) {
 //            char[] chars = words[i].toCharArray();
-//            Arrays.sort(chars);
+//            java.util.Arrays.sort(chars);
 //            words[i] = new String(chars);
 //            if (list.isEmpty() || !words[i].equals(list.get(list.size() - 1))) {
 //                list.add(words[i]);
@@ -48,11 +49,11 @@ public class Demo18 {
 //    public static boolean ww(String s1, String s2) {
 //        if (s1.length() != s2.length()) return true;
 //        char[] chars1 = s1.toCharArray();
-//        Arrays.sort(chars1);
+//        java.util.Arrays.sort(chars1);
 //        char[] chars2 = s2.toCharArray();
-//        Arrays.sort(chars2);
+//        java.util.Arrays.sort(chars2);
 //
-//        return !Arrays.equals(chars1,chars2);
+//        return !java.util.Arrays.equals(chars1,chars2);
 //    }
 
     public static List<String> removeAnagrams(String[] words) {
@@ -60,7 +61,7 @@ public class Demo18 {
         String pre = " ";
         for (int i = 0; i < words.length; ++i) {
             char[] cs = words[i].toCharArray();
-            Arrays.sort(cs);
+            java.util.Arrays.sort(cs);
             String s = String.valueOf(cs);
             if (i >= 1 && s.equals(pre)) continue;
             ans.add(words[i]);
@@ -85,7 +86,7 @@ public class Demo18 {
 //        int ans = 0;
 //        int n = nums.length;
 //
-//        Arrays.sort(nums);
+//        java.util.Arrays.sort(nums);
 //        int k = 0;
 //        while (!check(nums, n)) {
 //            for (int j = k; j < n; j++) {

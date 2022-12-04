@@ -1,7 +1,6 @@
 package com.power.september_21;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 
 /**
  * @author 崔帅
@@ -51,7 +50,7 @@ public class Demo05 {
             arrayList.add(i);
         }
         System.out.println(minNumberInRotateArray(arrayList));
-//        System.out.println(Arrays.toString(Arrays.asList(new int[])));
-//        Arrays.asList(new int[] {12,2,3,4});
+//        System.out.println(java.util.Arrays.toString(java.util.Arrays.asList(new int[])));
+//        java.util.Arrays.asList(new int[] {12,2,3,4});
     }
 }

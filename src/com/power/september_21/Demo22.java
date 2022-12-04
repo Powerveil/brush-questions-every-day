@@ -1,7 +1,5 @@
 package com.power.september_21;
 
-import java.util.Arrays;
-import java.util.Comparator;
 import java.util.Scanner;
 
 /**
@@ -21,11 +19,11 @@ public class Demo22 {
 //            strs2[i] = strs[i];
 //        }
 //
-////        System.out.println(Arrays.toString(strs));
+////        System.out.println(java.util.Arrays.toString(strs));
 //
 //        int flag1 = 0;//0为none 1为按字典序排序
 //        int flag2 = 0;//0为none 1为按长度排序
-//        Arrays.sort(strs1, new Comparator<String>() {
+//        java.util.Arrays.sort(strs1, new Comparator<String>() {
 //            @Override
 //            public int compare(String o1, String o2) {
 //                return o1.compareTo(o2);
@@ -33,7 +31,7 @@ public class Demo22 {
 //        });
 //
 //
-//        Arrays.sort(strs2, new Comparator<String>() {
+//        java.util.Arrays.sort(strs2, new Comparator<String>() {
 //            @Override
 //            public int compare(String o1, String o2) {
 //                return o1.length() - o2.length();

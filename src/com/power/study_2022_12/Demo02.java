@@ -51,4 +51,9 @@ public class Demo02 {
         int rightCount = maxDepth(root.right);
         return leftCount > rightCount ? leftCount + 1 : rightCount + 1;
     }
+
+//    public static void main(String[] args) {
+//        int a = 10;
+//
+//    }
 }

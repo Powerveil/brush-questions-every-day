@@ -78,7 +78,7 @@ public class Demo6 {
 //        // 知识点
 //        int count = 0;
 //        // 排序
-//        Arrays.sort(nums);
+//        java.util.Arrays.sort(nums);
 //        for (int i = nums.length-1; i >= 0; i--) {
 //            sum += nums[i];
 //            count++;
@@ -91,7 +91,7 @@ public class Demo6 {
 //    public static int halfQuestions(int[] questions) {
 //        int[] arr = new int[1001];
 //        for (int a : questions) arr[a]++;
-//        Arrays.sort(arr);
+//        java.util.Arrays.sort(arr);
 //        for (int i = arr.length - 1; i >= 0; i--) {
 //
 //        }

@@ -1,7 +1,6 @@
 package com.power.september_21;
 
 import java.util.Arrays;
-import java.util.Comparator;
 import java.util.HashSet;
 
 /**
@@ -14,13 +13,13 @@ public class Demo09 {
 //        for (int i = 0; i < cost.length; i++) {
 //            arr[i] = cost[i];
 //        }
-////        Arrays.sort(arr, new Comparator<Integer>() {
+////        java.util.Arrays.sort(arr, new Comparator<Integer>() {
 ////            @Override
 ////            public int compare(Integer o1, Integer o2) {
 ////                return o2 - o1;
 ////            }
 ////        });
-//        Arrays.sort(arr, (a,b) -> {return b - a;});
+//        java.util.Arrays.sort(arr, (a,b) -> {return b - a;});
 //        int sum = 0;
 //        for (int i = 0; i < arr.length; i++) {
 //            if ((i + 1) % 3 == 0) {
@@ -32,7 +31,7 @@ public class Demo09 {
 //    }
 
 //    public static int minimumCost(int[] cost) {
-//        Arrays.sort(cost);
+//        java.util.Arrays.sort(cost);
 //        int length = cost.length;
 //        int index = length - 1;
 //        int sum = 0;

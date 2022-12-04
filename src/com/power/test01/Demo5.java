@@ -27,7 +27,7 @@ public class Demo5 {
 //            e.printStackTrace();
             System.out.println("数组访问越界");
         }
-//        System.out.println(Arrays.toString(a));
+//        System.out.println(java.util.Arrays.toString(a));
 
     }
 

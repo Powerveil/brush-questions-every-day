@@ -1,8 +1,5 @@
 package com.power.september_21;
 
-import java.util.Arrays;
-import java.util.Scanner;
-
 /**
  * @author 崔帅
  * @version 1.0

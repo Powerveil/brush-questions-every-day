@@ -147,7 +147,7 @@ public class Demo04 {
 //        for (int i = 0; i < n * 3; i++) {
 //            arr[i] = in.nextInt();
 //        }
-//        Arrays.sort(arr);
+//        java.util.Arrays.sort(arr);
 //        long sum = 0;
 //        for (int i = n; i < n * 3; i += 2) {
 //            sum += arr[i];

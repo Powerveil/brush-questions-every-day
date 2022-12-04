@@ -1,6 +1,6 @@
 package com.power.test01;
 
-import java.util.*;
+import java.util.Arrays;
 
 //class MyQueue {
 //

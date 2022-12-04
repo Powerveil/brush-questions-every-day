@@ -64,7 +64,7 @@ public class Demo15 {
     public static void main(String[] args) {
 //        Integer[] arr = new Integer[] {1,2,1,2,1,2,1,1};
 //        System.out.println(MoreThanHalfNum_Solution(arr));
-//        Arrays.sort(arr,new Comparator<Integer>(){
+//        java.util.Arrays.sort(arr,new Comparator<Integer>(){
 //
 //            @Override
 //            public int compare(Integer o1, Integer o2) {
