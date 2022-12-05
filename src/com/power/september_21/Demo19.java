@@ -121,7 +121,7 @@ public class Demo19 {
             cntMap[p[0]] += p[1];
         }
         for (int i = 0; i <= 1000; i++) {
-            if (cntMap[i] != 0) res.add(java.util.Arrays.asList(i, cntMap[i]));
+            if (cntMap[i] != 0) res.add(Arrays.asList(i, cntMap[i]));
         }
         return res;
     }
@@ -152,7 +152,7 @@ public class Demo19 {
 
     public static int[] answerQueries(int[] nums, int[] queries) {
         int[] answer = new int[queries.length];
-        java.util.Arrays.sort(nums);
+        Arrays.sort(nums);
         int[] arr = new int[nums.length];
         for (int i = 0; i < arr.length; i++) arr[i] = nums[i];
         for (int i = 1; i < arr.length; i++) arr[i] += arr[i - 1];

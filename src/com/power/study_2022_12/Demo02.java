@@ -1,6 +1,6 @@
 package com.power.study_2022_12;
 
-import java.util.HashMap;
+import java.util.*;
 
 /**
  * @author 崔帅
@@ -45,15 +45,153 @@ public class Demo02 {
 
     // 104. 二叉树的最大深度
     // https://leetcode.cn/problems/maximum-depth-of-binary-tree/
-    public int maxDepth(TreeNode root) {
-        if (root == null) return 0;
-        int leftCount = maxDepth(root.left);
-        int rightCount = maxDepth(root.right);
-        return leftCount > rightCount ? leftCount + 1 : rightCount + 1;
-    }
+//    public int maxDepth(TreeNode root) {
+//        if (root == null) return 0;
+//        int leftCount = maxDepth(root.left);
+//        int rightCount = maxDepth(root.right);
+//        return leftCount > rightCount ? leftCount + 1 : rightCount + 1;
+//    }
 
 //    public static void main(String[] args) {
 //        int a = 10;
 //
 //    }
+
+
+    // 110. 平衡二叉树
+    // https://leetcode.cn/problems/balanced-binary-tree/
+    // 方法一
+//    public boolean isBalanced(TreeNode root) {
+//        if (root == null) return true;
+//        int leftCount = maxDepth(root.left);
+//        int rightCount = maxDepth(root.right);
+//        return Math.abs(leftCount - rightCount) > 1 ? false : (isBalanced(root.left) && isBalanced(root.right));
+//    }
+    // 方法二
+    public boolean isBalanced(TreeNode root) {
+        if (root == null) return true;
+        return maxDepth(root) != -1;
+    }
+    public int maxDepth(TreeNode root) {
+        if (root == null) return 0;
+        int leftCount = maxDepth(root.left);
+        int rightCount = maxDepth(root.right);
+        if (leftCount >= 0 && rightCount >= 0 && Math.abs(leftCount - rightCount) <= 1) {
+            return Math.max(leftCount,rightCount) + 1;
+        } else {
+            return -1;
+        }
+    }
+
+    // 101. 对称二叉树
+    // https://leetcode.cn/problems/symmetric-tree/
+    public boolean isSymmetric(TreeNode root) {
+        if (root == null) return false;
+        return isSame(root.left,root.right);
+    }
+
+    private boolean isSame(TreeNode root1, TreeNode root2) {
+        if (root1 == null && root2 == null) return true;
+        if (root1 == null || root2 == null) return false;
+        if (root1.val != root2.val) return false;
+        return isSame(root1.left, root2.right) && isSame(root1.right, root2.left);
+    }
+
+    // 层序遍历
+//    private void levelOrder(TreeNode root) {
+//        if (root == null) return;
+//        Queue<TreeNode> queue = new LinkedList<>();
+//        queue.offer(root);
+//        while (!queue.isEmpty()) {
+//            TreeNode cur = queue.poll();
+//            System.out.println(cur + " ");
+//            if (cur.left != null) {
+//                queue.offer(cur.left);
+//            }
+//            if (cur.right != null) {
+//                queue.offer(cur.right);
+//            }
+//        }
+//    }
+
+    // 102. 二叉树的层序遍历
+    // https://leetcode.cn/problems/binary-tree-level-order-traversal/
+//    public List<List<Integer>> levelOrder(TreeNode root) {
+//        List<List<Integer>> ret = new ArrayList<>();
+//        if (root == null) return ret;
+//        Queue<TreeNode> queue = new LinkedList<>();
+//        queue.offer(root);
+//        while (!queue.isEmpty()) {
+//            List<TreeNode> list = new ArrayList<>();
+//            List<Integer> list2 = new ArrayList<>();
+//            while (!queue.isEmpty()) {
+//                TreeNode poll = queue.poll();
+//                list.add(poll);
+//                list2.add(poll.val);
+//            }
+//            for (TreeNode cur : list) {
+//                if (cur.left != null) {
+//                    queue.offer(cur.left);
+//                }
+//                if (cur.right != null) {
+//                    queue.offer(cur.right);
+//                }
+//            }
+//            ret.add(list2);
+//        }
+//        return ret;
+//    }
+    public List<List<Integer>> levelOrder(TreeNode root) {
+        List<List<Integer>> ret = new ArrayList<>();
+        if (root == null) return ret;
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.offer(root);
+        while (!queue.isEmpty()) {
+            List<Integer> list = new ArrayList<>();
+            int size = queue.size();
+            while (size > 0) {
+                TreeNode cur = queue.poll();
+                list.add(cur.val);
+                size--;
+                if (cur.left != null) {
+                    queue.add(cur.left);
+                }
+                if (cur.right != null) {
+                    queue.add(cur.right);
+                }
+            }
+            ret.add(list);
+        }
+        return ret;
+    }
+
+
+    // 判断一棵树是不是完全二叉树
+    boolean isCompleteTree(TreeNode root) {
+        if (root == null) return true;
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.offer(root);
+        while (!queue.isEmpty()) {
+            TreeNode cur = queue.poll();
+            if (cur != null) {
+                queue.offer(cur.left);
+                queue.offer(cur.right);
+            } else {
+                break;
+            }
+        }
+
+        while (!queue.isEmpty()) {
+            TreeNode cur = queue.poll();
+            if (cur != null) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+
+
+
 }
+

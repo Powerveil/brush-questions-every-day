@@ -1,2 +1,9 @@
 
-]	java:S125	"<This block of commented-out lines of code should be removed.(Êš¨´úÿÿÿÿ8ŸÒÛëÍ0
+U
+java:S1854":Remove this useless assignment to local variable "arrays".(¹áäºşÿÿÿÿ
+H
+java:S2440"&Remove this instantiation of "Arrays".(¹áäºşÿÿÿÿ8çäÚˆÎ0
+F
+java:S1481"+Remove this unused "arrays" local variable.(¹áäºşÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(»•ûÿÿÿÿ
+Q	java:S125"<This block of commented-out lines of code should be removed.(¢´Ù

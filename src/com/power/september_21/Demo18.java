@@ -61,7 +61,7 @@ public class Demo18 {
         String pre = " ";
         for (int i = 0; i < words.length; ++i) {
             char[] cs = words[i].toCharArray();
-            java.util.Arrays.sort(cs);
+            Arrays.sort(cs);
             String s = String.valueOf(cs);
             if (i >= 1 && s.equals(pre)) continue;
             ans.add(words[i]);
