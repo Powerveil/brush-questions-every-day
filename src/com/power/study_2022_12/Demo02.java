@@ -6,6 +6,7 @@ import java.util.*;
  * @author 崔帅
  * @version 1.0
  */
+
 public class Demo02 {
     static class TreeNode {
         int val;
@@ -190,8 +191,61 @@ public class Demo02 {
         return true;
     }
 
+    // 236. 二叉树的最近公共祖先
+    // https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/
+//    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+//        if (root == null) return null;
+//        if (root == p || root == q) return root;
+//        TreeNode leftNode = lowestCommonAncestor(root.left,p,q);
+//        TreeNode rightNode = lowestCommonAncestor(root.right,p,q);
+//        if (leftNode != null && rightNode != null) {
+//            return root;
+//        } else if (leftNode != null) {
+//            return leftNode;
+//        } else if (rightNode != null) {
+//            return rightNode;
+//        } else {
+//            return null;
+//        }
+//    }
 
+    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+        Stack<TreeNode> stack1 = new Stack<>();
+        Stack<TreeNode> stack2 = new Stack<>();
+        getPath(root,p,stack1);
+        getPath(root,q,stack2);
+        int size = 0;
+        if (stack1.size() > stack2.size()) {
+            size = stack1.size() - stack2.size();
+            while (size > 0) {
+                size--;
+                stack1.pop();
+            }
+        } else {
+            size = stack2.size() - stack1.size();
+            while (size > 0) {
+                size--;
+                stack2.pop();
+            }
+        }
+        while (!stack1.isEmpty()) {
+            TreeNode t1 = stack1.pop();
+            TreeNode t2 = stack2.pop();
+            if (t1 == t2) return t1;
+        }
+        return null;
+    }
 
-
+    private boolean getPath(TreeNode root, TreeNode node, Stack<TreeNode> stack) {
+        if (root == null || node == null) return false;
+        stack.push(root);
+        if (root == node) return true;
+        boolean b1 = getPath(root.left, node, stack);
+        if (b1) return true;
+        boolean b2 = getPath(root.right, node, stack);
+        if (b2) return true;
+        stack.pop();
+        return false;
+    }
 }
 
