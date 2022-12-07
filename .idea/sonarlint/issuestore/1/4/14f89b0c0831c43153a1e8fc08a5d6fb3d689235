@@ -1,0 +1,19 @@
+
+s	java:S135I"YReduce the total number of break and continue statements in this loop to use at most one.(Üœ‘îùÿÿÿÿ
+^
+java:S3518"CMake sure this expression can't be zero before doing this division.(¾Ÿ“ÿÿÿÿÿ
+P
+java:S1854"5Remove this useless assignment to local variable "a".(¾Ÿ“ÿÿÿÿÿ
+A
+java:S1481"&Remove this unused "a" local variable.(¾Ÿ“ÿÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ÔÃ­¶øÿÿÿÿ
+Q	java:S125"<This block of commented-out lines of code should be removed.(†€éˆ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ò³ß½
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Š»‰É
+Q	java:S125"<This block of commented-out lines of code should be removed.(†€éˆ
+V	java:S125"<This block of commented-out lines of code should be removed.(²Â‘“ıÿÿÿÿ
+m
+java:S3776$"RRefactor this method to reduce its Cognitive Complexity from 18 to the 15 allowed.(õÏùÿÿÿÿÿ
+V	java:S1253"<This block of commented-out lines of code should be removed.(ü™ñşÿÿÿÿ
+b
+java:S1871M"LThis branch's code block is the same as the block for the branch on line 74.(å··¡

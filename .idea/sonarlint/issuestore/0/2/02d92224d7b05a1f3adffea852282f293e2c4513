@@ -1,0 +1,20 @@
+
+o
+java:S2293I"YReplace the type specification in this constructor call with the diamond operator ("<>").(žò’×
+t
+java:S2293P"YReplace the type specification in this constructor call with the diamond operator ("<>").(“¯ÛÙÿÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(½Ç…¥ûÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(ù³˜–úÿÿÿÿ
+c	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÇÂÃÐ
+@
+java:S1197"*Move the array designators [] to the type.(ÇÂÃÐ
+@
+java:S1197"*Move the array designators [] to the type.(ÇÂÃÐ
+c	java:S100$"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ñÔÅö
+<
+java:S1905,"&Remove this unnecessary cast to "int".(‰ù‚
+Q	java:S1252"<This block of commented-out lines of code should be removed.(ÔµœÜ
+i
+java:S1602I"SRemove useless curly braces around statement and then remove useless return keyword(žò’×
+n
+java:S1602P"SRemove useless curly braces around statement and then remove useless return keyword(“¯ÛÙÿÿÿÿÿ

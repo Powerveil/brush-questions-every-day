@@ -1,0 +1,20 @@
+
+=
+java:S1604"(Make this anonymous inner class a lambda(¦åÃn
+c	java:S100!"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Âƒ˜Â
+U
+java:S1854/":Remove this useless assignment to local variable "number".(¹×œ”øÿÿÿÿ
+i
+java:S3776’"RRefactor this method to reduce its Cognitive Complexity from 66 to the 15 allowed.(ìáïõ
+V	java:S125;"<This block of commented-out lines of code should be removed.(Ž´æÙÿÿÿÿÿ
+V	java:S125\"<This block of commented-out lines of code should be removed.(»ž•ûÿÿÿÿ
+Q	java:S125{"<This block of commented-out lines of code should be removed.(Ð½áª
+R	java:S125™"<This block of commented-out lines of code should be removed.(‘Ÿ„é
+W	java:S125›"<This block of commented-out lines of code should be removed.(éØ»Úûÿÿÿÿ
+[
+java:S3358®"DExtract this nested ternary operation into an independent statement.(‡«˜Þ
+[
+java:S3358¿"DExtract this nested ternary operation into an independent statement.(Ö€ŠŒ
+O	java:S106Î"9Replace this use of System.out or System.err by a logger.(¦Œ÷Û
+=
+java:S1144É"'Remove this unused private "qq" method.(Ô”¾h

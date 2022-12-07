@@ -1,0 +1,9 @@
+
+V	java:S125"<This block of commented-out lines of code should be removed.(»•ûÿÿÿÿ
+V	java:S125$"<This block of commented-out lines of code should be removed.(»•ûÿÿÿÿ
+V	java:S125L"<This block of commented-out lines of code should be removed.(ûİÿøÿÿÿÿ
+R	java:S125ƒ"<This block of commented-out lines of code should be removed.(©ãùè
+u
+java:S3012"YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(×€§½ùÿÿÿÿ
+T	java:S106¹"9Replace this use of System.out or System.err by a logger.(İ²é¾úÿÿÿÿ
+W	java:S125¸"<This block of commented-out lines of code should be removed.(§¶˜ùÿÿÿÿÿ

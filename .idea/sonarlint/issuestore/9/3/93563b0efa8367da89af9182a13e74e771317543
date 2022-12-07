@@ -1,0 +1,13 @@
+
+E
+java:S1066*"/Merge this if statement with the enclosing one.(­¥æª
+E
+java:S1066Y"/Merge this if statement with the enclosing one.(Ñ€—õ
+E
+java:S1066c"/Merge this if statement with the enclosing one.(ß‹éÇ
+V	java:S125"<This block of commented-out lines of code should be removed.(»ž•ûÿÿÿÿ
+>	java:S108*")Either remove or fill this block of code.(­¥æª
+V	java:S1258"<This block of commented-out lines of code should be removed.(­²¦Åüÿÿÿÿ
+W	java:S125"<This block of commented-out lines of code should be removed.(¬á”ûÿÿÿÿ
+T	java:S106¤"9Replace this use of System.out or System.err by a logger.(Ä”’‡ÿÿÿÿÿ
+R	java:S125£"<This block of commented-out lines of code should be removed.(™åÊ™

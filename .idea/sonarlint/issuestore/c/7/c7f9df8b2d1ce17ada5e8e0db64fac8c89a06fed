@@ -1,0 +1,17 @@
+
+D
+java:S1121\".Extract the assignment out of this expression.(•¹à¿
+e	java:S1171"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(—ƒ§9
+k
+java:S11494"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ÑÖÙƒýÿÿÿÿ
+g
+java:S37761"RRefactor this method to reduce its Cognitive Complexity from 16 to the 15 allowed.(—ƒ§9
+V	java:S125"<This block of commented-out lines of code should be removed.(»ž•ûÿÿÿÿ
+V	java:S125"<This block of commented-out lines of code should be removed.(¬á”ûÿÿÿÿ
+h	java:S100C"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(èÍò×ÿÿÿÿÿ
+N	java:S106I"9Replace this use of System.out or System.err by a logger.(¢›°Š
+Q	java:S125H"<This block of commented-out lines of code should be removed.(ÕÂ§µ
+Z
+java:S1659Q"?Declare "sd" and all following declarations on a separate line.(ƒý…Žüÿÿÿÿ
+C
+java:S1481Q"(Remove this unused "ans" local variable.(ƒý…Žüÿÿÿÿ
