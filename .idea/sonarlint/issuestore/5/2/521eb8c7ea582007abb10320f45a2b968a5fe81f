@@ -7,6 +7,7 @@ e
 java:S1149"PReplace the synchronized class "Stack" by an unsynchronized one such as "Deque".(ëÙæ0
 T
 java:S1155">Use isEmpty() to check whether the collection is empty or not.(ËÁü
-Z	java:S1064"9Replace this use of System.out or System.err by a logger.(å²çğşÿÿÿÿ8¤ˆçÎ0
 X	java:S1253"<This block of commented-out lines of code should be removed.(°÷«±8‡ùˆçÎ0
 X	java:S1257"<This block of commented-out lines of code should be removed.(Ó—8Ã»çÎ0
+J
+java:S1128".Remove this unused import 'java.util.HashSet'.(Ê‚êX8ğ½¯üÎ0

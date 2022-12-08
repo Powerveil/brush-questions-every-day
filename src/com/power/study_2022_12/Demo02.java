@@ -247,5 +247,33 @@ public class Demo02 {
         stack.pop();
         return false;
     }
+
+    // JZ36 二叉搜索树与双向链表
+    // https://www.nowcoder.com/practice/947f6eb80d944a84850b0538bf0ec3a5?tpId=13&&tqId=11179&rp=1&ru=/activity/oj&qru=/ta/coding-interviews/question-ranking
+    // left -> pre
+    // right -> next
+    private TreeNode prev = null;
+    public TreeNode Convert(TreeNode root) {
+        if (root == null) return null;
+        ConvertChild(root);
+        TreeNode cur = root;
+        while (cur.left != null) {
+            cur = cur.left;
+        }
+        return cur;
+    }
+
+    private void ConvertChild(TreeNode root) {
+        if (root == null) return;
+        ConvertChild(root.left);
+        root.left = prev;
+        if (prev != null) {
+            prev.right = root;
+        }
+        prev = root;
+        ConvertChild(root.right);
+    }
+
+
 }
 
