@@ -40,14 +40,19 @@ public class Demo03 {
 //        System.out.println(split[random.nextInt(4)]);
 
         // 使用 Scanner 读文本文件
-        InputStream inputStream = new FileInputStream("D:\\source\\src.txt");
-
-        Scanner scanner = new Scanner(inputStream);
-        while (scanner.hasNext()) {
-            System.out.println(scanner.next());
+//        InputStream inputStream = new FileInputStream("D:\\source\\src.txt");
+//
+//        Scanner scanner = new Scanner(inputStream);
+//        while (scanner.hasNext()) {
+//            System.out.println(scanner.next());
+//        }
+//
+//        inputStream.close();
+        File path = new File("D:/");
+        String[] list = path.list();
+        for (String s : list) {
+            System.out.println(s);
         }
-
-        inputStream.close();
 
     }
 }
