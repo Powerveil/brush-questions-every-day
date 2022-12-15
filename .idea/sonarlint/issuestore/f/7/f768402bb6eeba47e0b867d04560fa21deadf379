@@ -1,0 +1,26 @@
+
+›
+java:S1130"yRemove the declaration of thrown exception 'java.lang.ClassNotFoundException', as it cannot be thrown from method's body.(„á¸›ıÿÿÿÿ8ØêúÏ0
+›
+java:S1130"yRemove the declaration of thrown exception 'java.lang.InstantiationException', as it cannot be thrown from method's body.(„á¸›ıÿÿÿÿ8ÙêúÏ0
+›
+java:S1130"yRemove the declaration of thrown exception 'java.lang.IllegalAccessException', as it cannot be thrown from method's body.(„á¸›ıÿÿÿÿ8ÙêúÏ0
+
+java:S1130"nRemove the declaration of thrown exception 'java.sql.SQLException', as it cannot be thrown from method's body.(„á¸›ıÿÿÿÿ8ÙêúÏ0
+
+java:S1130"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(„á¸›ıÿÿÿÿ8ÚêúÏ0
+Q	java:S125"<This block of commented-out lines of code should be removed.(»¡˜®
+Q	java:S125"<This block of commented-out lines of code should be removed.(†¨÷È
+Q	java:S125%"<This block of commented-out lines of code should be removed.(‡Åš
+V	java:S125+"<This block of commented-out lines of code should be removed.(äšõ®úÿÿÿÿ
+c
+java:S10753"ARefactor your code to get this URI from a customizable parameter.(˜ìèçûÿÿÿÿ8àêúÏ0
+Z	java:S1066"9Replace this use of System.out or System.err by a logger.(Å­Ëİúÿÿÿÿ8úÛóÏ0
+M
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8ãêúÏ0
+O
+java:S1128"-Remove this unused import 'java.util.Arrays'.(î–˜Éüÿÿÿÿ8äêúÏ0
+O
+java:S1128"-Remove this unused import 'java.util.Random'.(èøÉ›ùÿÿÿÿ8äêúÏ0
+P
+java:S1128".Remove this unused import 'java.util.Scanner'.(ÒÜÅ¸úÿÿÿÿ8äêúÏ0
