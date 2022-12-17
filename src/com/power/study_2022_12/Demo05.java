@@ -24,7 +24,7 @@ public class Demo05 {
         return res.toString();
     }
 
-    public int findRepeatNumber(int[] nums) {
+    public static int findRepeatNumber(int[] nums) {
         int i = 0;
         while(i < nums.length) {
             if(nums[i] == i) {
@@ -98,16 +98,48 @@ public class Demo05 {
         return left;
     }
 
-    public static void main(String[] args) {
-//        System.out.println((-1 >> 1)); // -1
-//        System.out.println((-1 >>> 1)); // 2147483647
-        System.out.println(aa(1,7));
-
-    }
+//    public static void main(String[] args) {
+////        System.out.println((-1 >> 1)); // -1
+////        System.out.println((-1 >>> 1)); // 2147483647
+//        System.out.println(aa(1,7));
+//
+//    }
 
     private static int aa(int left, int right) {
 //        int k = left + (right - left) / 2;
         return left + (right - left >> 1);
+    }
+
+
+//    public static boolean findNumberIn2DArray(int[][] matrix, int target) {
+//        int ww = matrix.length - 1;
+//        while (ww >= 0) {
+//            if (target >= matrix[ww][0]) {
+//                break;
+//            }
+//            ww--;
+//        }
+//        if (ww < 0) return false;
+//        for (int i = 0; i < matrix[ww].length; i++) {
+//            if (matrix[ww][i] == target) return true;
+//        }
+//        return false;
+//    }
+
+    public static boolean findNumberIn2DArray(int[][] matrix, int target) {
+        int i = matrix.length - 1, j = 0;
+        while(i >= 0 && j < matrix[0].length)
+        {
+            if(matrix[i][j] > target) i--;
+            else if(matrix[i][j] < target) j++;
+            else return true;
+        }
+        return false;
+    }
+
+
+    public static void main(String[] args) {
+        System.out.println(findNumberIn2DArray(new int[][]{{1,4,7,11,15},{2,5,8,12,19},{3,6,9,16,22},{10,13,14,17,24},{18,21,23,26,30}}, 5));
     }
 
 }

@@ -59,5 +59,3 @@ W
 'src/com/power/study_2022_12/Demo01.java,c\b\cbbad5f31c8c5bb81b4553684f5984153e474ce8
 ]
 -src/com/power/study_2022_12/test/Testaaa.java,4\3\43ab441c006b864410f95f1df43ddd5439f24b06
-W
-'src/com/power/study_2022_12/Demo05.java,0\c\0c42c687b16ed3c4984c83f6cc9718f327b20648
