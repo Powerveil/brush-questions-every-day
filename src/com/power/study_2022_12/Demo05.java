@@ -1,12 +1,24 @@
 package com.power.study_2022_12;
 
-import java.util.HashMap;
+import java.util.*;
 
 /**
  * @author power
  * @Date 2022/12/16 18:06
  */
 public class Demo05 {
+
+
+    static class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+
+        TreeNode(int x) {
+            val = x;
+        }
+    }
+
 //    public static String reverseLeftWords(String s, int n) {
 //        if (n == 0) return s;
 //        n %= s.length();
@@ -19,19 +31,19 @@ public class Demo05 {
 
     public static String reverseLeftWords(String s, int n) {
         StringBuilder res = new StringBuilder();
-        for(int i = n; i < n + s.length(); i++)
+        for (int i = n; i < n + s.length(); i++)
             res.append(s.charAt(i % s.length()));
         return res.toString();
     }
 
     public static int findRepeatNumber(int[] nums) {
         int i = 0;
-        while(i < nums.length) {
-            if(nums[i] == i) {
+        while (i < nums.length) {
+            if (nums[i] == i) {
                 i++;
                 continue;
             }
-            if(nums[nums[i]] == nums[i]) return nums[i];
+            if (nums[nums[i]] == nums[i]) return nums[i];
             int tmp = nums[i];
             nums[i] = nums[tmp];
             nums[tmp] = tmp;
@@ -87,9 +99,9 @@ public class Demo05 {
 
     public int missingNumber(int[] nums) {
         int left = 0, right = nums.length - 1;
-        while(left <= right) {
+        while (left <= right) {
             int mid = left + (right - left >> 1);
-            if(mid == nums[mid]) {
+            if (mid == nums[mid]) {
                 left = mid + 1; // 左边全部符合条件 | 最后(left == right)如果相等说明mid+1位置空缺
             } else {
                 right = mid - 1; // 右边全部符合条件 | 最后(left == right)如果相等说明left位置空缺 直接退出循环即可
@@ -128,18 +140,154 @@ public class Demo05 {
 
     public static boolean findNumberIn2DArray(int[][] matrix, int target) {
         int i = matrix.length - 1, j = 0;
-        while(i >= 0 && j < matrix[0].length)
-        {
-            if(matrix[i][j] > target) i--;
-            else if(matrix[i][j] < target) j++;
+        while (i >= 0 && j < matrix[0].length) {
+            if (matrix[i][j] > target) i--;
+            else if (matrix[i][j] < target) j++;
             else return true;
         }
         return false;
     }
 
 
-    public static void main(String[] args) {
-        System.out.println(findNumberIn2DArray(new int[][]{{1,4,7,11,15},{2,5,8,12,19},{3,6,9,16,22},{10,13,14,17,24},{18,21,23,26,30}}, 5));
+//    public static void main(String[] args) {
+//        System.out.println(findNumberIn2DArray(new int[][]{{1, 4, 7, 11, 15}, {2, 5, 8, 12, 19}, {3, 6, 9, 16, 22}, {10, 13, 14, 17, 24}, {18, 21, 23, 26, 30}}, 5));
+//    }
+
+    public int minArray(int[] numbers) {
+        int left = 0;
+        int right = numbers.length - 1;
+        while (left < right) {
+            int mid = left + (right - left >> 1);
+            if (numbers[mid] < numbers[right]) {
+                right = mid;
+            } else if (numbers[mid] > numbers[right]) {
+                left = mid + 1;
+            } else {
+                right--;
+            }
+        }
+        return numbers[left];
     }
 
+    //    public char firstUniqChar(String s) {
+//        HashMap<Character, Integer> hashMap = new HashMap<>();
+//        for (char c : s.toCharArray()) {
+//            hashMap.put(c, hashMap.getOrDefault(c, 0) + 1);
+//        }
+//        for (char c : s.toCharArray()) {
+//            if (hashMap.get(c) == 1) return c;
+//        }
+//        return ' ';
+//    }
+
+
+//    public char firstUniqChar(String s) {
+//        LinkedHashMap<Character, Integer> map = new LinkedHashMap<>();
+//        for (int i = 0; i < s.length(); i++) {
+//            char c = s.charAt(i);
+//            map.put(c, map.getOrDefault(c, 0) + 1);
+//        }
+//        for (Character c : map.keySet()) {
+//            if (map.get(c) == 1) {
+//                return c;
+//            }
+//        }
+//        return ' ';
+//    }
+
+
+    public static char firstUniqChar(String s) {
+        int n = s.length();
+        LinkedList<Character> queue = new LinkedList<>();
+        Map<Character, Integer> map = new HashMap<>();
+        for (int i = 0; i < n; i++) {
+            char c = s.charAt(i);
+            map.put(c, map.getOrDefault(c, 0) + 1);
+            if (map.get(c) == 1) {
+                queue.offer(c);
+            }
+        }
+        for (int i = 0; i < n; i++) {
+            char c = s.charAt(i);
+            if (!queue.isEmpty() && map.get(queue.peek()) > 1) {
+                queue.remove(new Character(c));
+                map.put(c, -1);
+            }
+        }
+
+        return queue.isEmpty() ? ' ' : queue.peek();
+    }
+
+
+//    public int[] levelOrder(TreeNode root) {
+//        if (root == null) return new int[]{};
+//        LinkedList<TreeNode> linkedList = new LinkedList<>();
+//        List<Integer> list = new ArrayList<>();
+//        linkedList.offer(root);
+//        while (!linkedList.isEmpty()) {
+//            TreeNode poll = linkedList.poll();
+//            list.add(poll.val);
+//            if (poll.left != null) {
+//                linkedList.offer(poll.left);
+//            }
+//
+//            if (poll.right != null) {
+//                linkedList.offer(poll.right);
+//            }
+//        }
+//
+//        int[] arr = new int[list.size()];
+//        for (int i = 0; i < list.size(); i++) {
+//            arr[i] = list.get(i);
+//        }
+//        return arr;
+//    }
+
+    public static void main(String[] args) {
+        System.out.println(firstUniqChar("loveleetcode"));
+    }
+
+//    public List<List<Integer>> levelOrder(TreeNode root) {
+//        List<List<Integer>> result = new ArrayList<>();
+//        if (root == null) return result;
+//        LinkedList<TreeNode> linkedList = new LinkedList<>();
+//        linkedList.offer(root);
+//        while (!linkedList.isEmpty()) {
+//            List<Integer> list = new ArrayList<>();
+//            int len = linkedList.size();
+//            for (int i = 0; i < len; i++) {
+//                TreeNode poll = linkedList.poll();
+//                list.add(poll.val);
+//                if (poll.left != null) {
+//                    linkedList.offer(poll.left);
+//                }
+//                if (poll.right != null) {
+//                    linkedList.offer(poll.right);
+//                }
+//            }
+//            result.add(list);
+//        }
+//        return result;
+//    }
+
+
+
+    public List<List<Integer>> levelOrder(TreeNode root) {
+        List<List<Integer>> result = new ArrayList<>();
+        Queue<TreeNode> queue = new LinkedList<>();
+        if (root != null) queue.offer(root);
+        while (!queue.isEmpty()) {
+            LinkedList<Integer> list = new LinkedList<>();
+            int len = queue.size();
+            for (int i = 0; i < len; i++) {
+                TreeNode poll = queue.poll();
+                if ((result.size() & 1) == 1) list.addFirst(poll.val);
+                else list.addLast(poll.val);
+                if (poll.left != null) queue.offer(poll.left);
+                if (poll.right != null) queue.offer(poll.right);
+            }
+            result.add(list);
+        }
+        return result;
+    }
 }
