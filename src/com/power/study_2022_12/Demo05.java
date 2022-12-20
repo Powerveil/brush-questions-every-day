@@ -290,4 +290,92 @@ public class Demo05 {
         }
         return result;
     }
+
+
+//    public boolean isSubStructure(TreeNode A, TreeNode B) {
+//        if (A == null && B != null) return false;
+//        if (B == null) return false;
+//        if (isSame(A, B)) return true;
+//        return isSubStructure(A.left, B) || isSubStructure(A.right, B);
+//    }
+//
+//    private boolean isSame(TreeNode A, TreeNode B) {
+//        if (A == null && B != null) return false;
+//        if (B == null) return true;
+//        if (A.val != B.val) return false;
+//        return isSame(A.left, B.left) && isSame(A.right, B.right);
+//    }
+
+
+
+    public boolean isSubStructure(TreeNode A, TreeNode B) {
+        return (A != null && B != null) && (recur(A, B) || isSubStructure(A.left, B) || isSubStructure(A.right, B));
+    }
+    boolean recur(TreeNode A, TreeNode B) {
+        if(B == null) return true;
+        if(A == null || A.val != B.val) return false;
+        return recur(A.left, B.left) && recur(A.right, B.right);
+    }
+
+
+    public TreeNode mirrorTree(TreeNode root) {
+        if (root == null) return null;
+        TreeNode temp = root.left;
+        root.left = mirrorTree(root.right);
+        root.right = mirrorTree(temp);
+        return root;
+    }
+
+//    public boolean isSymmetric(TreeNode root) {
+//        if (root == null) return true;
+//        return isSame(root.left, root.right);
+//    }
+//
+//    private boolean isSame(TreeNode p1, TreeNode p2) {
+//        if (p1 == null && p2 == null) return true;
+//        if (p1 == null || p2 == null) return false;
+//        if (p1.val != p2.val) return false;
+//        return isSame(p1.left, p2.right) && isSame(p1.right, p2.left);
+//    }
+
+
+    public boolean isSymmetric(TreeNode root) {
+        return isSame(root, root);
+    }
+
+    private boolean isSame(TreeNode p1, TreeNode p2) {
+        LinkedList<TreeNode> list = new LinkedList<>();
+        list.offer(p1);
+        list.offer(p2);
+        while (!list.isEmpty()) {
+            TreeNode t1 = list.poll();
+            TreeNode t2 = list.poll();
+            if (t1 == null && t2 == null) continue;
+            if (t1 == null || t2 == null || t1.val != t2.val) return false;
+
+            list.offer(t1.left);
+            list.offer(t2.right);
+            list.offer(t1.right);
+            list.offer(t2.left);
+        }
+        return true;
+    }
+
+    public int fib(int n) {
+        int a = 0;
+        int b = 1;
+        while (n-- > 0) {
+            int c = b;
+            b = a + b;
+            a = c;
+            b %= 1000000007;
+        }
+        return a;
+    }
+
+
+
+
+
+
 }
