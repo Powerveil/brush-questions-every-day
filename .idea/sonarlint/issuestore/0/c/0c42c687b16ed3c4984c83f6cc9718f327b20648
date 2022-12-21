@@ -1,8 +1,8 @@
 
-n	java:S117·"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ý‹šÎ8­“ˆýÒ0
-n	java:S117·"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ý‹šÎ8­“ˆýÒ0
-m	java:S117º"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜à•+8­“ˆýÒ0
-m	java:S117º"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜à•+8®“ˆýÒ0
+g	java:S117·"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ý‹šÎ
+g	java:S117·"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ý‹šÎ
+f	java:S117º"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜à•+
+f	java:S117º"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜à•+
 V	java:S125"<This block of commented-out lines of code should be removed.(°ï§çüÿÿÿÿ
 V	java:S125"<This block of commented-out lines of code should be removed.(»ž•ûÿÿÿÿ
 V	java:S1256"<This block of commented-out lines of code should be removed.(µšö†øÿÿÿÿ
@@ -25,7 +25,7 @@ java:S2129Õ"#Remove this "Character" constructor( ˜Èî
 W	java:S125Þ"<This block of commented-out lines of code should be removed.(¶ö¬Àþÿÿÿÿ
 T	java:S106÷"9Replace this use of System.out or System.err by a logger.(Ñ›ˆûùÿÿÿÿ
 W	java:S125ú"<This block of commented-out lines of code should be removed.(Äãî¾úÿÿÿÿ
-^	java:S125§"<This block of commented-out lines of code should be removed.(°·³­ùÿÿÿÿ8ƒ‰ýÒ0
-Y	java:S125É"<This block of commented-out lines of code should be removed.(ÔÔ·Ñ8ÉÒéýÒ0
+W	java:S125§"<This block of commented-out lines of code should be removed.(°·³­ùÿÿÿÿ
+R	java:S125É"<This block of commented-out lines of code should be removed.(ÔÔ·Ñ
 =
 java:S1144x"'Remove this unused private "aa" method.(Òãƒ¥
