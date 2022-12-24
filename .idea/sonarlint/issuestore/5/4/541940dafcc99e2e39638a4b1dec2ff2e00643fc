@@ -1,0 +1,21 @@
+
+J
+java:S1604"(Make this anonymous inner class a lambda(Ã®­Šùÿÿÿÿ8Ö¡çÔ0
+j	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÎµŸß8÷¡çÔ0
+{
+java:S2142""^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€8û¡çÔ0
+W
+java:S2274!":Remove this call to "wait" or move it into a "while" loop.(Šä8ü¡çÔ0
+Z	java:S106'"9Replace this use of System.out or System.err by a logger.(Šü»İøÿÿÿÿ8ı¡çÔ0
+M
+java:S2446*"0"notify" may not wake up the appropriate thread.(­ÀôÉ8ÿ¡çÔ0
+j	java:S100."NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ƒıƒ¨8ÿ¡çÔ0
+{
+java:S21422"^Either re-interrupt this method or rethrow the "InterruptedException" that can be caught here.(ä ¹€8¢çÔ0
+W
+java:S22741":Remove this call to "wait" or move it into a "while" loop.(Šä8¢çÔ0
+T
+java:S11353"2Complete the task associated to this TODO comment.(ÕÌ®şÿÿÿÿ8‚¢çÔ0
+Z	java:S1068"9Replace this use of System.out or System.err by a logger.(Šü»İøÿÿÿÿ8ƒ¢çÔ0
+M
+java:S2446;"0"notify" may not wake up the appropriate thread.(­ÀôÉ8„¢çÔ0
