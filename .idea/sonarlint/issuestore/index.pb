@@ -69,6 +69,12 @@ W
 +src/com/power/study_2022_12/ThreadTest.java,5\4\541940dafcc99e2e39638a4b1dec2ff2e00643fc
 \
 ,src/com/power/study_2022_12/test/Parent.java,b\0\b07a94fed4f0726abc8aa9ca00ea7e83bc7df319
+Z
+*src/com/power/study_2022_12/test/Test.java,a\f\afd17458d5958cce3297dc175509c5bab69f9a3c
+_
+/src/com/power/study_2022_12/test/Something.java,3\6\36900fa51144c0c8c8406daee4580ba665d37d44
+W
+'src/com/power/study_2022_12/test/A.java,6\a\6a1b41b7b448104db5db5f4b3fb66bac497012fb
 [
 +src/com/power/study_2022_12/test/Child.java,4\b\4b9b7feff6b397a7e20c71c3aa5785fc6a7b1e13
 a
@@ -76,10 +82,6 @@ a
 R
 "src/com/power/study_2022_12/A.java,4\6\464b3912f5c780e91bbadab95b14fa484f26375d
 Z
-*src/com/power/study_2022_12/test/Test.java,a\f\afd17458d5958cce3297dc175509c5bab69f9a3c
-_
-/src/com/power/study_2022_12/test/Something.java,3\6\36900fa51144c0c8c8406daee4580ba665d37d44
-W
-'src/com/power/study_2022_12/test/A.java,6\a\6a1b41b7b448104db5db5f4b3fb66bac497012fb
-Z
 *src/com/power/study_2022_12/test/Ball.java,1\8\18cfb7afe480b37f453bc5423b53bbdd9ca48dbe
+\
+,src/com/power/study_2022_12/test/Test02.java,0\3\03de79333c8ed54d5ec68e5348fee01d2ce92dc5
