@@ -20,10 +20,10 @@ public class Test02 {
 
     }
 
-    public void readPreferences(String filename) {
-        Objects.requireNonNull(filename);
-//...perform other operations...
-        InputStream in = new FileInputStream(filename);
-//...read the preferences file...
-    }
+//    public void readPreferences(String filename) {
+//        Objects.requireNonNull(filename);
+////...perform other operations...
+//        InputStream in = new FileInputStream(filename);
+////...read the preferences file...
+//    }
 }

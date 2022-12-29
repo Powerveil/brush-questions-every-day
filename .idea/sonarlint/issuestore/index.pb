@@ -85,3 +85,5 @@ U
 %src/com/power/study_2022_12/Test.java,4\d\4dc07082eed7c69bc2ebdbcafa27a556d0178831
 \
 ,src/com/power/study_2022_12/test/Test02.java,0\3\03de79333c8ed54d5ec68e5348fee01d2ce92dc5
+T
+$src/com/power/study_2022_12/test.yml,1\f\1ff837e95e346a4c40bf45ad627f70c0d556bb8b

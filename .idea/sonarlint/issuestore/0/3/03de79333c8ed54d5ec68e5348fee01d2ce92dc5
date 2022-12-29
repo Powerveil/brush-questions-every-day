@@ -1,8 +1,5 @@
 
-j
-java:S2095"MUse try-with-resources or close this "FileInputStream" in a "finally" clause.(™«¸Ö8·£µ÷Ô0
 N	java:S106"9Replace this use of System.out or System.err by a logger.(ĞÌï
-S
-java:S1854"6Remove this useless assignment to local variable "in".(™«¸Ö8¿£µ÷Ô0
-D
-java:S1481"'Remove this unused "in" local variable.(™«¸Ö8Ã£µ÷Ô0
+X	java:S125"<This block of commented-out lines of code should be removed.(óğÇó8×âœóÕ0
+K
+java:S1128".Remove this unused import 'java.util.Objects'.(¼¸õ›8ÙâœóÕ0
