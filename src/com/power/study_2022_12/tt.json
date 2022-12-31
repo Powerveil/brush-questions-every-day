@@ -104,7 +104,15 @@ db.getCollection('movies').find({
 })
 
 
-db.fruit.updateOne({"name": "apple"},{$set: {from: "China"}})
+db.fruit.updateOne({
+  "name": "apple"
+},{$set: {from: "China"}})
+
+result = user_coll.update_one({
+{"username": "power"},
+{"$set": {"phone": "123456789"}}
+})
+print result
 
 
 

@@ -87,5 +87,7 @@ U
 %src/com/power/study_2022_12/Test.java,4\d\4dc07082eed7c69bc2ebdbcafa27a556d0178831
 \
 ,src/com/power/study_2022_12/test/Test02.java,0\3\03de79333c8ed54d5ec68e5348fee01d2ce92dc5
+Q
+!src/com/power/study_2022_12/aa.py,8\6\8622bcb7ed97bb472cf44badcd1bc5487184ddd6
 S
 #src/com/power/study_2022_12/tt.json,8\6\86fdb938e5d812a69ffce8f72cd865fb3a727192
