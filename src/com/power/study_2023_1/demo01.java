@@ -24,12 +24,14 @@ public class demo01 {
 
 
 //        Collection
-        List<String> list = new ArrayList<>();
-        list.add("x");
-        Collection<String> clist = Collections.unmodifiableCollection(list);
-        System.out.println(clist);
-        clist.add("y"); // 运行时此行报错
-        System.out.println(list.size());
+//        List<String> list = new ArrayList<>();
+//        list.add("x");
+//        Collection<String> clist = Collections.unmodifiableCollection(list);
+//        System.out.println(clist);
+//        clist.add("y"); // 运行时此行报错
+//        System.out.println(list.size());
+
+        System.out.println((null instanceof Long));
 
     }
 

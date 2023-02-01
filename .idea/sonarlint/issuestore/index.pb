@@ -95,3 +95,5 @@ V
 &src/com/power/study_2022_12/mongod.yml,1\c\1c65eef56f6b9e6160e4cdef64664dd85dafdd98
 V
 &src/com/power/study_2023_1/demo01.java,c\9\c912814397f898255f0af3748a3b36ac0289bc03
+V
+&src/com/power/study_2023_2/Demo01.java,2\7\27bc753fda2be23835607b2eba18917651cbb5c5
