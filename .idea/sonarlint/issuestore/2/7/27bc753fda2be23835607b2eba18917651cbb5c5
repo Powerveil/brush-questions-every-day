@@ -1,9 +1,0 @@
-
-s
-java:S1845›"PRename method "merge" to prevent any misunderstanding/clash with method "Merge".(…¿²úÿÿÿÿ8½èÎéà0
-c	java:S100u"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œÇ‰Œ
-V	java:S1252"<This block of commented-out lines of code should be removed.(º‚àÄûÿÿÿÿ
-]	java:S125>"<This block of commented-out lines of code should be removed.(¼ÿ˜êşÿÿÿÿ8È±íèà0
-]	java:S125e"<This block of commented-out lines of code should be removed.(¼ÿ˜êşÿÿÿÿ8‰¹ğèà0
-M
-java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8…ïÏéà0
