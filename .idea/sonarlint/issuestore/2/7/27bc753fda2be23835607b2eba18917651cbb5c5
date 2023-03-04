@@ -1,0 +1,20 @@
+
+P
+java:S1191"5Use classes from the Java API instead of Sun classes.(áÏ¸ıÿÿÿÿ
+]
+java:S2259İ"AA "NullPointerException" could be thrown; "cur" is nullable here.(œìË÷üÿÿÿÿ
+g
+java:S1845œ"PRename method "merge" to prevent any misunderstanding/clash with method "Merge".(ñÅïè
+c	java:S100w"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(œÇ‰Œ
+V	java:S1254"<This block of commented-out lines of code should be removed.(º‚àÄûÿÿÿÿ
+V	java:S125@"<This block of commented-out lines of code should be removed.(¼ÿ˜êşÿÿÿÿ
+V	java:S125g"<This block of commented-out lines of code should be removed.(¼ÿ˜êşÿÿÿÿ
+i	java:S100µ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İËØÑùÿÿÿÿ
+d	java:S100Ğ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Í÷†Û
+d	java:S100ä"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Êé˜Œ
+i	java:S100Œ"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ö«Óüÿÿÿÿ
+R	java:S125"<This block of commented-out lines of code should be removed.(ÃÄ°
+g
+java:S1128"LRemove this unused import 'com.sun.org.apache.bcel.internal.generic.RETURN'.(áÏ¸ıÿÿÿÿ
+F
+java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ
