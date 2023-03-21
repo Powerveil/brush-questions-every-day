@@ -93,15 +93,11 @@ S
 #src/com/power/study_2022_12/tt.json,8\6\86fdb938e5d812a69ffce8f72cd865fb3a727192
 V
 &src/com/power/study_2022_12/mongod.yml,1\c\1c65eef56f6b9e6160e4cdef64664dd85dafdd98
-S
-#.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
 V
 &src/com/power/study_2023_1/demo01.java,c\9\c912814397f898255f0af3748a3b36ac0289bc03
-R
-"src/com/power/study_2023_2/AR.java,d\8\d8c2962765c6d93550d108a49eb16c24807e421e
+V
+&src/com/power/study_2023_2/Demo02.java,4\7\4790aa94bd68da22d662bb8dc1b1b8d3a556d4ed
 S
 #src/com/power/study_2023_2/Awq.java,8\5\85795aded61bead4ab678450ab87d932376d2f5b
 V
 &src/com/power/study_2023_2/Demo01.java,2\7\27bc753fda2be23835607b2eba18917651cbb5c5
-V
-&src/com/power/study_2023_2/Demo02.java,4\7\4790aa94bd68da22d662bb8dc1b1b8d3a556d4ed
