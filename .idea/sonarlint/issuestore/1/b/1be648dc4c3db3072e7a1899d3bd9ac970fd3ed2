@@ -1,0 +1,13 @@
+
+f
+java:S2095"DUse try-with-resources or close this "Socket" in a "finally" clause.(Ä¡şüÿÿÿÿ8™¸ÔùŠ1
+=
+java:S2189""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ
+=
+java:S21892""Add an end condition to this loop.(˜ïˆÿÿÿÿÿ
+p
+java:S1450"URemove the "writer" field and declare it as a local variable in the relevant methods.(†¦ÈŒÿÿÿÿÿ
+Z	java:S106"9Replace this use of System.out or System.err by a logger.(ñâ‡üÿÿÿÿ8¢¸ÔùŠ1
+s
+java:S1450("VRemove the "scanner" field and declare it as a local variable in the relevant methods.(Ù‘Ğ8¬¸ÔùŠ1
+U	java:S1064"9Replace this use of System.out or System.err by a logger.(­ÁšÍ8±¸ÔùŠ1

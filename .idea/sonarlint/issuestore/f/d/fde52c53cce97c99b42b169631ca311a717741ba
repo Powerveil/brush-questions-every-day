@@ -1,0 +1,101 @@
+
+K
+java:S3740»"/Provide the parametrized type for this generic.(Á©Ñ…øÿÿÿÿ
+F
+java:S3740Ñ"/Provide the parametrized type for this generic.(­ì®ò
+f	java:S117b"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¢Æ£º
+k	java:S117c"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ò–şãùÿÿÿÿ
+f	java:S117d"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(øæî
+f	java:S117e"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷”æ¶
+k	java:S117f"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Â²¸ªıÿÿÿÿ
+D
+java:S1604Ÿ"(Make this anonymous inner class a lambda(¼Õçøÿÿÿÿ
+c	java:S101«"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(ò±
+h	java:S101Â"MRename this class name to match the regular expression '^[A-Z][a-zA-Z0-9]*$'.(¼‹ã§üÿÿÿÿ
+e
+java:S2184•"BCast one of the operands of this division operation to a "double".(áı¼ªúÿÿÿÿ8êåëêŒ1
+c
+java:S2184•"@Cast one of the operands of this integer division to a "double".(áı¼ªúÿÿÿÿ8ëåëêŒ1
+^
+java:S2259‹"BA "NullPointerException" could be thrown; "stu1" is nullable here.(…Ô•Àúÿÿÿÿ
+x
+java:S4165!"bRemove this useless assignment; "flat" already holds the assigned value along all execution paths.(ÚıˆÍ
+S
+java:S2589&"8Remove this expression which always evaluates to "false"(¡€ÿ›øÿÿÿÿ
+–
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(™ûâT
+h	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¸ÇŠöùÿÿÿÿ
+
+java:S1130"lRemove the declaration of thrown exception 'java.io.IOException', as it cannot be thrown from method's body.(¸ÇŠöùÿÿÿÿ8ÙéëêŒ1
+E
+java:S1197"*Move the array designators [] to the type.(¸ÇŠöùÿÿÿÿ
+Q	java:S125"<This block of commented-out lines of code should be removed.(Õ²¦¬
+X
+java:S2696"6Make the enclosing method "static" or remove this set.(Â·£úÿÿÿÿ8ééëêŒ1
+N	java:S106"9Replace this use of System.out or System.err by a logger.(‚Î·á
+N	java:S106 "9Replace this use of System.out or System.err by a logger.(†˜şÌ
+S	java:S106("9Replace this use of System.out or System.err by a logger.(˜ãÆšúÿÿÿÿ
+M	java:S106*"9Replace this use of System.out or System.err by a logger.(Åß¶J
+S	java:S106,"9Replace this use of System.out or System.err by a logger.(¸¡Şúÿÿÿÿ
+X
+java:S2696/"6Make the enclosing method "static" or remove this set.(Â·£úÿÿÿÿ8ùéëêŒ1
+S	java:S1060"9Replace this use of System.out or System.err by a logger.(ëäÖÛıÿÿÿÿ
+h	java:S1005"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ìïª½úÿÿÿÿ
+E
+java:S11975"*Move the array designators [] to the type.(ìïª½úÿÿÿÿ
+N	java:S106F"9Replace this use of System.out or System.err by a logger.(ÖË±½
+E
+java:S1197L"*Move the array designators [] to the type.(½ü³ıÿÿÿÿ
+N	java:S106U"9Replace this use of System.out or System.err by a logger.(ü÷‹»
+N	java:S106V"9Replace this use of System.out or System.err by a logger.(¹ì„¯
+S	java:S106["9Replace this use of System.out or System.err by a logger.(×„êÈüÿÿÿÿ
+@
+java:S1197a"*Move the array designators [] to the type.(·û‚Ã
+N	java:S106j"9Replace this use of System.out or System.err by a logger.(¸µ‚ø
+S	java:S106n"9Replace this use of System.out or System.err by a logger.(©ß¶şÿÿÿÿ
+N	java:S106r"9Replace this use of System.out or System.err by a logger.(¢øåø
+N	java:S106v"9Replace this use of System.out or System.err by a logger.(ºÓ¶
+M	java:S106z"9Replace this use of System.out or System.err by a logger.(ãìë(
+N	java:S106~"9Replace this use of System.out or System.err by a logger.(È…°²
+S	java:S106"9Replace this use of System.out or System.err by a logger.(ú¿¯ïıÿÿÿÿ
+O	java:S106€"9Replace this use of System.out or System.err by a logger.(Ê»ÁÙ
+T	java:S106"9Replace this use of System.out or System.err by a logger.(•Á¶ùÿÿÿÿ
+O	java:S106‚"9Replace this use of System.out or System.err by a logger.(…ìŸœ
+F
+java:S1197…"*Move the array designators [] to the type.(Ôš÷øÿÿÿÿ
+d	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(˜à°ê
+A
+java:S1197"*Move the array designators [] to the type.(˜à°ê
+O	java:S106–"9Replace this use of System.out or System.err by a logger.(š™ëÌ
+u
+java:S3012"YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(œ«€±ÿÿÿÿÿ
+T
+java:S1854·"8Remove this useless assignment to local variable "temp".(ÂÓŸÿÿÿÿÿ
+Z
+java:S1659¶">Declare "j" and all following declarations on a separate line.(Æ™‚ùÿÿÿÿ
+B
+java:S1481¶"&Remove this unused "j" local variable.(Æ™‚ùÿÿÿÿ
+B
+java:S1481¶"&Remove this unused "k" local variable.(Æ™‚ùÿÿÿÿ
+E
+java:S1481·")Remove this unused "temp" local variable.(ÂÓŸÿÿÿÿÿ
+o
+java:S3012¹"YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(¢Ø­U
+T
+java:S1854Í"8Remove this useless assignment to local variable "temp".(ÂÓŸÿÿÿÿÿ
+Z
+java:S1659Ì">Declare "j" and all following declarations on a separate line.(Æ™‚ùÿÿÿÿ
+B
+java:S1481Ì"&Remove this unused "j" local variable.(Æ™‚ùÿÿÿÿ
+B
+java:S1481Ì"&Remove this unused "k" local variable.(Æ™‚ùÿÿÿÿ
+E
+java:S1481Í")Remove this unused "temp" local variable.(ÂÓŸÿÿÿÿÿ
+o
+java:S3012Ï"YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(¢Ø­U
+u
+java:S3012ß"YUse "Arrays.copyOf", "Arrays.asList", "Collections.addAll" or "System.arraycopy" instead.(ÁáÖ¸ûÿÿÿÿ
+T	java:S106á"9Replace this use of System.out or System.err by a logger.(‹†ˆ¡ûÿÿÿÿ
+T	java:S106â"9Replace this use of System.out or System.err by a logger.(úÇ¨ôşÿÿÿÿ
+F
+java:S1197ç"*Move the array designators [] to the type.(Š¿áúÿÿÿÿÿ
