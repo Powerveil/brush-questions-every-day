@@ -1,15 +1,0 @@
-
-X	java:S125"<This block of commented-out lines of code should be removed.(–Úõñ8Ï•úÛ‰1
-V	java:S125"<This block of commented-out lines of code should be removed.(»•ûÿÿÿÿ
-]	java:S1251"<This block of commented-out lines of code should be removed.(»•ûÿÿÿÿ8úúöÛ‰1
-X	java:S125H"<This block of commented-out lines of code should be removed.(úå†Ã8öåıÛ‰1
-]	java:S125g"<This block of commented-out lines of code should be removed.(»•ûÿÿÿÿ8 šÃÑŠ1
-[	java:S106"9Replace this use of System.out or System.err by a logger.(†ö·ÿÿÿÿÿ8™ÃùÛ‰1
-@
-java:S1128"$Remove this unused import 'java.io'.(¬›ãD8æıÛ‰1
-M
-java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ8à•úÛ‰1
-M
-java:S1128"+Remove this unused import 'java.util.List'.(Õë±Äøÿÿÿÿ8á•úÛ‰1
-P
-java:S1128".Remove this unused import 'java.util.Scanner'.(ÒÜÅ¸úÿÿÿÿ8¢šÃÑŠ1
