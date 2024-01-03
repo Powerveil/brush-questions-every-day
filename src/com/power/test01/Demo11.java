@@ -1,6 +1,6 @@
 package com.power.test01;
 
-import com.sun.corba.se.impl.encoding.CDROutputObject;
+//import com.sun.corba.se.impl.encoding.CDROutputObject;
 
 //import java.util.*;
 import java.util.Scanner;
